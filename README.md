@@ -10,9 +10,9 @@
     - #99E2DO (tertiaire - mint)
 
 ### Technologies:
-* Développement en CSS sans JavaScript
+* Développement & animations exclusivement en CSS, sans JavaScript
 * Utilisation de Sass
-* Aucun Framework
+* Aucun Framework CSS
 
 ### Compatibilité:
 * Mobile first : maquettes faites uniquement pour les mobiles / mise en page libre pour les tablettes et desktop
@@ -29,7 +29,7 @@
     - Chacune contenant le menu d'un restaurant.
 * Footer:
     - Identique sur toutes les pages.
-* Header
+* Header:
     - Présent sur toutes les pages.
     - Contient le logo sur la page d'accueil.
     - Dans les pages menu, contient en plus un bouton de retour vers la page d'accueil.
