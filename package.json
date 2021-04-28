@@ -1,0 +1,22 @@
+{
+  "name": "elodieboinzanchi_3_280421",
+  "version": "1.0.0",
+  "description": "Ohmyfood! - Brief",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebz8/ElodieBoinZanchi_3_280421.git"
+  },
+  "author": "Elodie Boin Zanchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebz8/ElodieBoinZanchi_3_280421/issues"
+  },
+  "homepage": "https://github.com/ebz8/ElodieBoinZanchi_3_280421#readme",
+  "dependencies": {
+    "sass": "^1.32.11"
+  }
+}
