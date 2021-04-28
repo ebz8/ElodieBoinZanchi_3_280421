@@ -1,0 +1,8 @@
+@include font-face(Shrikhand);
+@include font-face(Roboto, bold, italic);
+
+
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(/resources/fonts/Shrikhand-Regular.ttf);
+}
