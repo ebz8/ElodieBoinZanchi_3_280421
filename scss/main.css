@@ -9,7 +9,8 @@ Use a better box model (opinionated).
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /**
@@ -17,7 +18,8 @@ Use a more readable tab size (opinionated).
 */
 :root {
   -moz-tab-size: 4;
-  tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
 }
 
 /**
@@ -72,7 +74,8 @@ Text-level semantics
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /**
@@ -91,7 +94,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -175,9 +178,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -230,7 +233,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type=search] {
+[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -267,67 +270,30 @@ summary {
 }
 
 @font-face {
-  font-family: "Shrikhand";
+  font-family: 'Shrikhand';
   src: url(/resources/fonts/Shrikhand-Regular.ttf);
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   src: url(/resources/fonts/Roboto-Light.ttf);
   font-style: light;
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   src: url(/resources/fonts/Roboto-Regular.ttf);
   font-style: regular;
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   src: url(/resources/fonts/Roboto-Bold.ttf);
   font-style: bold;
 }
-/**
-----------------------
-fiche de style de base
-----------------------
-*/
-body {
-  text-align: center;
-  font-size: 1rem;
-  margin: 0 auto;
-}
 
-main {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-/**
-styles textuels
-*/
 p {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: light;
 }
-
-h1 {
-  font-family: "Shrikhand";
-}
-
-/**
-----------------------
-header
-----------------------
-*/
-header {
-  display: flex;
-  justify-content: center;
-}
-
-ul img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

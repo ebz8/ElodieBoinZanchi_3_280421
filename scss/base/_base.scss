@@ -1,11 +1,31 @@
-// éléments de style de base //
+/**
+----------------------
+fiche de style de base
+----------------------
+*/
 
+body{
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 auto;
+}
 
-// styles textuels //
-p
-{
-    font-family: 'Roboto';
-    font-weight: light;
+main{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/**
+styles textuels
+*/
+p{
+  font-family: 'Roboto';
+  font-weight: light;
+}
+
+h1{
+  font-family: 'Shrikhand';
 }
 
 
