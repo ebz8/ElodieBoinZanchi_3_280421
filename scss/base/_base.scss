@@ -14,6 +14,7 @@ body{
 main{
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -21,12 +22,11 @@ main{
 styles textuels
 */
 p{
-  font-family: 'Roboto';
-  font-weight: light;
+  font-family: 'Roboto', light;
 }
 
 h1{
-  font-family: 'Shrikhand';
+  font: 1.5rem 'Shrikhand';
 }
 
 
