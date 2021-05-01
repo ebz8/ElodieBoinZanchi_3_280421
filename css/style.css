@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -266,6 +267,11 @@ summary {
   display: list-item;
 }
 
+/**
+-----------------------
+éléments de typographie
+-----------------------
+*/
 @font-face {
   font-family: "Shrikhand";
   src: url(/resources/fonts/Shrikhand-Regular.ttf);
@@ -292,6 +298,7 @@ fiche de style de base
 */
 body {
   text-align: center;
+  font-family: "Roboto" regular;
   font-size: 1rem;
   margin: 0 auto;
 }
@@ -316,14 +323,20 @@ h1 {
 
 /**
 ----------------------
-header
+header - logo
 ----------------------
 */
 header {
   display: flex;
   justify-content: center;
+  background-color: blueviolet;
 }
 
+/**
+-----------------------
+style du footer
+-----------------------
+*/
 ul img {
   width: 100%;
   height: auto;
