@@ -1,4 +1,11 @@
-// Mise en forme des cartes de restaurants
+// Raccourcis flexbox - center
+@mixin flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+
+// Mise en forme basique des cartes
 @mixin cards--style{
     width: 100%;
     height: auto;
