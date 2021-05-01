@@ -1,8 +1,11 @@
-@include font-face(Shrikhand);
-@include font-face(Roboto, bold, italic);
+// éléments de style de base //
 
 
-@font-face {
-    font-family: 'Shrikhand';
-    src: url(/resources/fonts/Shrikhand-Regular.ttf);
+// styles textuels //
+p
+{
+    font-family: 'Roboto';
+    font-weight: light;
 }
+
+
