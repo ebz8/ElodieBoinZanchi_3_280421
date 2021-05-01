@@ -1,8 +1,9 @@
-// Raccourcis flexbox - center
+// Raccourcis Flexbox - center - 100vw
 @mixin flexcenter{
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
+    width: 100vw;
   }
 
 // Mise en forme basique des cartes

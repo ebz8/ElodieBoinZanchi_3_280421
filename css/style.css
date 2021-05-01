@@ -297,16 +297,23 @@ fiche de style de base
 ----------------------
 */
 body {
+  margin: 0 auto;
   font-family: "Roboto" regular;
   font-size: 1rem;
-  margin: 0 auto;
 }
 
 .page--container {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   flex-flow: column wrap;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+  line-height: 2rem;
 }
 
 /**
@@ -317,7 +324,7 @@ p {
 }
 
 h1 {
-  font: 1.5rem "Shrikhand";
+  font: 2rem "Shrikhand";
 }
 
 /**
@@ -328,8 +335,11 @@ header - logo
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100vw;
-  background-color: blueviolet;
+  width: 100vw;
+  padding: 0.3rem;
+  box-shadow: 0 0px 8px 0px rgba(105, 105, 105, 0.6);
 }
 
 /**
@@ -337,6 +347,32 @@ header {
 style du footer
 -----------------------
 */
+/**
+----------------------
+page d'accueil
+----------------------
+*/
+/**
+localisation
+*/
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+/**
+exploration
+*/
+.exploration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-flow: column wrap;
+}
+
 ul img {
   width: 100%;
   height: auto;

@@ -1,3 +1,28 @@
+/**
+----------------------
+page d'accueil
+----------------------
+*/
+
+/**
+localisation
+*/
+
+.localisation{
+    @include flexcenter;
+}
+
+/**
+exploration
+*/
+
+.exploration{
+    @include flexcenter;
+    flex-flow: column wrap;
+}
+
+
+
 //test//
 ul{
     img{

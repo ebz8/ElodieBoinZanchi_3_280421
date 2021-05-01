@@ -6,8 +6,8 @@ header - logo
 
 header
 {
-  display: flex;
-  justify-content: center;
+  @include flexcenter;
   width: 100vw;
-  background-color: blueviolet;
+  padding: 0.3rem;
+  box-shadow: 0 0px 8px 0px rgba(105, 105, 105, 0.6);
 }

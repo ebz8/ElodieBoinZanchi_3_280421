@@ -5,9 +5,9 @@ fiche de style de base
 */
 
 body{
+  margin: 0 auto;
   font-family: 'Roboto' regular;
   font-size: 1rem;
-  margin: 0 auto;
 }
 
 .page--container{
@@ -15,15 +15,24 @@ body{
   flex-flow: column wrap;
 }
 
+// trouver comment remplacer par un reset global
+h1, h2, h3, h4, h5, p
+{
+  margin: 0;
+  padding: 0;
+  line-height: 2rem;
+}
+
 /**
 styles textuels
 */
+
 p{
   font-family: 'Roboto', light;
 }
 
 h1{
-  font: 1.5rem 'Shrikhand';
+  font: 2rem 'Shrikhand';
 }
 
 
