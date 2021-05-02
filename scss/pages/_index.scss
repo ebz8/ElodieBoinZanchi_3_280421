@@ -48,7 +48,8 @@ accueil
 }
 
 .demo .active{
-  background-color: $primary-color(30%);
+  // background-color: $primary-color;
+  background-color: lighten($primary-color, 34%);
 
   .fas{
     color: $primary-color;

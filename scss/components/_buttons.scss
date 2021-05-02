@@ -4,7 +4,7 @@ boutons
 -----------------------
 */
 
-//bouton dégradé
+// bouton dégradé
 .general-button{
     background: linear-gradient($secondary-color, $primary-color);
     padding: 0.9rem 1.5rem;
@@ -14,6 +14,8 @@ boutons
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+// bouton "Nouveau"
+// se superpose au contenu de son bloc parent
 .new-button{
   position: absolute;
   top: 0.8rem;
@@ -26,6 +28,8 @@ boutons
   border-radius: 0.2rem;
 }
 
+// bouton largeur 100%
+// gris et ombre portée
 .demo-button{
   width: 100%;
   padding: 1.5rem;
