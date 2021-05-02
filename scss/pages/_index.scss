@@ -39,7 +39,21 @@ accueil
 //
 // mode d'emploi
 //
+.demo{
+  .fas{
+    padding-right: 1rem;
+    color: darken($bg-color,50%);
+    font-size: 1.1rem;
+  }
+}
 
+.demo .active{
+  background-color: $primary-color(30%);
+
+  .fas{
+    color: $primary-color;
+  }
+}
 
 
 //

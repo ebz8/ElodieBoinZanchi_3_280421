@@ -16,8 +16,8 @@ boutons
 
 .new-button{
   position: absolute;
-  top: 2rem;
-  right: 1rem;
+  top: 0.8rem;
+  right: 0.8rem;
   width: min-content;
   padding: 0.3rem 0.7rem;
   background-color: $tertiary-color;
@@ -25,3 +25,24 @@ boutons
   font: 0.8rem 'Roboto Regular';
   border-radius: 0.2rem;
 }
+
+.demo-button{
+  width: 100%;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  background-color: darken($bg-color,4%);
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+  font: 0.9rem 'Roboto Regular';
+}
+
+.step{
+  position: relative;
+  left: -2rem;
+  padding: 0.3rem 0.5rem 0.1rem;
+  border-radius: 100%;
+  background-color: $primary-color;
+  color: white;
+  font: 0.9rem 'Roboto Regular';
+}
+
