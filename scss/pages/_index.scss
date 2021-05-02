@@ -29,7 +29,7 @@ accueil
   @include flexcenter;
   flex-flow: column wrap;
   text-align: center;
-  background-color: darken($bg-color,5%);
+  background-color: darken($bg-color,4%);
 
     button{
       margin-top: 1rem;
@@ -47,7 +47,7 @@ accueil
 // restaurants
 //
 .restaurants{
-  background-color: darken($bg-color,5%);
+  background-color: darken($bg-color,4%);
 
   ul{
     position: relative;

@@ -4,11 +4,12 @@ boutons
 -----------------------
 */
 
+//bouton dégradé
 .general-button{
     background: linear-gradient($secondary-color, $primary-color);
-    padding: 1rem 1.5rem;
+    padding: 0.9rem 1.5rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     color: white;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
