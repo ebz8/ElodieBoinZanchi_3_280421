@@ -48,12 +48,27 @@ accueil
 //
 .restaurants{
   background-color: darken($bg-color,5%);
-  
-}
 
-//test//
-ul{
-  img{
-  @include cards--style;
+  ul{
+    position: relative;
+    background-color: $bg-color;
+    border-radius: 1rem;
+
+    img{
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1rem 1rem 0 0;
+    }
   }
 }
+
+.card--legend__container{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  .fa-heart{
+    font-size: 1.5rem;
+  }
+}
+

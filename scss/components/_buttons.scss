@@ -12,3 +12,15 @@ boutons
     color: white;
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
+
+.new-button{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: min-content;
+  padding: 0.3rem 0.7rem;
+  background-color: $tertiary-color;
+  color: darken($tertiary-color, 40%);
+  font: 0.8rem 'Roboto Regular';
+  border-radius: 0.2rem;
+}

@@ -346,7 +346,6 @@ section {
 h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
-  line-height: 2rem;
 }
 
 p {
@@ -359,11 +358,21 @@ h1 {
 
 h2 {
   font: 1.1rem 'Roboto Light';
+  line-height: 2rem;
 }
 
 h3 {
   font: 1.5rem 'Roboto Bold';
   padding-bottom: 1.5rem;
+  line-height: 2rem;
+}
+
+h4 {
+  font: 1rem 'Roboto Bold';
+}
+
+h5 {
+  font: 1rem 'Roboto Light';
 }
 
 a {
@@ -454,6 +463,20 @@ boutons
           box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.new-button {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 0.3rem 0.7rem;
+  background-color: #98e2cf;
+  color: #26876f;
+  font: 0.8rem 'Roboto Regular';
+  border-radius: 0.2rem;
+}
+
 /**
 ----------------------
 accueil
@@ -510,10 +533,30 @@ accueil
   background-color: #f2f2f2;
 }
 
-ul img {
+.restaurants ul {
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.restaurants ul img {
   width: 100%;
-  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card--legend__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.card--legend__container .fa-heart {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
