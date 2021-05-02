@@ -277,19 +277,16 @@ summary {
   src: url(/resources/fonts/Shrikhand-Regular.ttf);
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto Light";
   src: url(/resources/fonts/Roboto-Light.ttf);
-  font-style: light;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto Regular";
   src: url(/resources/fonts/Roboto-Regular.ttf);
-  font-style: regular;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto Bold";
   src: url(/resources/fonts/Roboto-Bold.ttf);
-  font-style: bold;
 }
 /**
 ----------------------
@@ -303,7 +300,7 @@ input::-moz-placeholder {
 
 body {
   margin: 0 auto;
-  font-family: "Roboto";
+  font-family: "Roboto Regular";
   font-size: 1rem;
 }
 
@@ -322,7 +319,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 p {
-  font-family: "Roboto";
+  font-family: "Roboto Regular";
 }
 
 h1 {
@@ -330,11 +327,11 @@ h1 {
 }
 
 h2 {
-  font: 1.1rem "Roboto";
+  font: 1.1rem "Roboto Light";
 }
 
 h3 {
-  font: 1.5rem "Roboto";
+  font: 1.5rem "Roboto Bold";
 }
 
 /**
@@ -384,7 +381,7 @@ accueil
   border: none;
   background-color: transparent;
   width: 50vw;
-  font-family: "Roboto";
+  font-family: "Roboto Regular";
   text-align: center;
 }
 
@@ -396,6 +393,9 @@ accueil
   flex-flow: column wrap;
   text-align: center;
   padding: 2rem 2rem;
+}
+.exploration button {
+  margin-top: 1rem;
 }
 
 ul img {

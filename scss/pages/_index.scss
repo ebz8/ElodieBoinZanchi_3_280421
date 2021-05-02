@@ -17,7 +17,7 @@ accueil
       border: none;
       background-color: transparent;
       width: 50vw;
-      font-family: 'Roboto';
+      font-family: 'Roboto Regular';
       text-align: center;
     }
 }
@@ -30,13 +30,15 @@ accueil
     flex-flow: column wrap;
     text-align: center;
     padding: 2rem 2rem;
+
+    button{
+      margin-top: 1rem;
+    }
 }
-
-
 
 //test//
 ul{
-    img{
-        @include cards--style;
-    }
+  img{
+  @include cards--style;
+  }
 }
