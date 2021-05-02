@@ -310,6 +310,11 @@ body {
   flex-flow: column wrap;
 }
 
+input::-moz-placeholder {
+  opacity: 1;
+  -webkit-appearance: none;
+}
+
 h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
@@ -338,8 +343,8 @@ header {
   align-items: center;
   width: 100vw;
   width: 100vw;
-  padding: 0.3rem;
-  box-shadow: 0 0px 8px 0px rgba(105, 105, 105, 0.6);
+  padding: 1rem 0.3rem 0.3rem;
+  box-shadow: 0 0px 10px 0px rgba(56, 56, 56, 0.5);
 }
 
 /**
@@ -352,14 +357,21 @@ style du footer
 page d'accueil
 ----------------------
 */
-/**
-localisation
-*/
 .localisation {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
+  background-color: #ededed;
+  margin-top: 0.3rem;
+  padding: 0.7rem 0;
+}
+.localisation input {
+  border: none;
+  background-color: transparent;
+  width: 50vw;
+  font-family: "Roboto";
+  text-align: center;
 }
 
 /**

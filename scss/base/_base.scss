@@ -15,6 +15,13 @@ body{
   flex-flow: column wrap;
 }
 
+// Reset Firefox pour formulaires
+input::-moz-placeholder
+{
+    opacity: 1;
+    -webkit-appearance: none;
+}
+
 // trouver comment remplacer par un reset global
 h1, h2, h3, h4, h5, p
 {
