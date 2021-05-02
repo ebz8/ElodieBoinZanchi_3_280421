@@ -8,10 +8,10 @@ accueil
 // localisation
 //
 .localisation{
-    @include flexcenter;
-    background-color: darken($bg-color,7%);
-    margin-top: 0.3rem;
-    padding: 0.7rem 0;
+  @include flexcenter;
+  background-color: darken($bg-color,7%);
+  margin-top: 0.3rem;
+  padding: 0.7rem 0;
 
     input{
       border: none;
@@ -26,15 +26,23 @@ accueil
 // exploration
 //
 .exploration{
-    @include flexcenter;
-    flex-flow: column wrap;
-    text-align: center;
-    padding: 2rem 2rem;
+  @include flexcenter;
+  flex-flow: column wrap;
+  text-align: center;
+  background-color: darken($bg-color,2%);
 
     button{
       margin-top: 1rem;
     }
 }
+
+//
+// mode d'emploi
+//
+.manual{
+}
+
+
 
 //test//
 ul{

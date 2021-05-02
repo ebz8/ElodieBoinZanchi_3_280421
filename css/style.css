@@ -304,11 +304,20 @@ body {
   font-size: 1rem;
 }
 
+section {
+  padding: 2.7rem 1rem 3.5rem;
+}
+
 .page--container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
+  flex-flow: column wrap;
+}
+
+.container {
+  display: flex;
   flex-flow: column wrap;
 }
 
@@ -346,7 +355,7 @@ header {
   width: 100vw;
   width: 100vw;
   padding: 1rem 0.3rem 0.3rem;
-  box-shadow: 0 0px 10px 0px rgba(56, 56, 56, 0.5);
+  box-shadow: 0 0 10px 0 rgba(56, 56, 56, 0.6);
 }
 
 /**
@@ -356,7 +365,7 @@ style du footer
 */
 .general-button {
   background: linear-gradient(#ff7ad9, #9256dc);
-  padding: 0.7rem 1rem;
+  padding: 1rem 1.5rem;
   border: none;
   border-radius: 2rem;
   color: white;
@@ -392,7 +401,7 @@ accueil
   width: 100vw;
   flex-flow: column wrap;
   text-align: center;
-  padding: 2rem 2rem;
+  background-color: #fafafa;
 }
 .exploration button {
   margin-top: 1rem;

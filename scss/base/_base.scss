@@ -5,10 +5,9 @@ fiche de style de base
 */
 
 // Reset Firefox pour formulaires
-input::-moz-placeholder
-{
-    opacity: 1;
-    -webkit-appearance: none;
+input::-moz-placeholder{
+  opacity: 1;
+  -webkit-appearance: none;
 }
 
 body{
@@ -17,14 +16,24 @@ body{
   font-size: 1rem;
 }
 
+
+// Mise en forme des blocs conteneurs
+section{
+  padding: 2.7rem 1rem 3.5rem;
+}
+
 .page--container{
   @include flexcenter;
   flex-flow: column wrap;
 }
 
+.container{
+  display: flex;
+  flex-flow: column wrap;
+}
+
 // trouver comment remplacer par un reset global
-h1, h2, h3, h4, h5, p
-{
+h1, h2, h3, h4, h5, p{
   margin: 0;
   padding: 0;
   line-height: 2rem;
@@ -47,7 +56,6 @@ h2{
 
 h3{
   font: 1.5rem 'Roboto Bold';
-
 }
 
 
