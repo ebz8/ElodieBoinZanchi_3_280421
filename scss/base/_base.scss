@@ -4,22 +4,22 @@ fiche de style de base
 ----------------------
 */
 
+// Reset Firefox pour formulaires
+input::-moz-placeholder
+{
+    opacity: 1;
+    -webkit-appearance: none;
+}
+
 body{
   margin: 0 auto;
-  font-family: 'Roboto' regular;
+  font-family: 'Roboto';
   font-size: 1rem;
 }
 
 .page--container{
   @include flexcenter;
   flex-flow: column wrap;
-}
-
-// Reset Firefox pour formulaires
-input::-moz-placeholder
-{
-    opacity: 1;
-    -webkit-appearance: none;
 }
 
 // trouver comment remplacer par un reset global
@@ -30,16 +30,24 @@ h1, h2, h3, h4, h5, p
   line-height: 2rem;
 }
 
-/**
-styles textuels
-*/
-
+//
+//styles textuels
+//
 p{
-  font-family: 'Roboto', light;
+  font-family: 'Roboto';
 }
 
 h1{
   font: 2rem 'Shrikhand';
+}
+
+h2{
+  font: 1.1rem 'Roboto';
+  }
+
+h3{
+  font: 1.5rem 'Roboto';
+
 }
 
 

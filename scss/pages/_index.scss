@@ -1,11 +1,12 @@
 /**
 ----------------------
-page d'accueil
+accueil
 ----------------------
 */
 
 //
 // localisation
+//
 .localisation{
     @include flexcenter;
     background-color: darken($bg-color,7%);
@@ -21,14 +22,14 @@ page d'accueil
     }
 }
 
-
-/**
-exploration
-*/
-
+//
+// exploration
+//
 .exploration{
     @include flexcenter;
     flex-flow: column wrap;
+    text-align: center;
+    padding: 2rem 2rem;
 }
 
 
