@@ -431,8 +431,8 @@ boutons
 
 .new-button {
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 2rem;
+  right: 1rem;
   width: min-content;
   padding: 0.3rem 0.7rem;
   background-color: #98e2cf;
@@ -480,7 +480,6 @@ accueil
   background-color: whitesmoke;
 }
 .restaurants ul {
-  position: relative;
   border-radius: 1rem;
   border-radius: 1rem 1rem 0 0;
 }
@@ -491,6 +490,7 @@ accueil
   border-radius: 1rem 1rem 0 0;
 }
 .restaurants li {
+  position: relative;
   margin-top: 1rem;
   background-color: white;
   border-radius: 1rem;

@@ -39,8 +39,7 @@ accueil
 //
 // mode d'emploi
 //
-.manual{
-}
+
 
 
 //
@@ -50,7 +49,6 @@ accueil
   background-color: darken($bg-color,4%);
 
   ul{
-    position: relative;
     border-radius: 1rem;
     border-radius: 1rem 1rem 0 0;
 
@@ -62,6 +60,7 @@ accueil
     }
   }
   li{
+    position: relative;
     margin-top: 1rem;
     background-color: $bg-color;
     border-radius: 1rem;
