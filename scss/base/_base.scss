@@ -1,23 +1,16 @@
 /**
 ----------------------
-fiche de style de base
+bases
 ----------------------
 */
 
-// Reset Firefox pour formulaires
-input::-moz-placeholder{
-  opacity: 1;
-  -webkit-appearance: none;
-}
-
 body{
   margin: 0 auto;
-  font-family: 'Roboto Regular';
+  font-family: 'Roboto Light';
   font-size: 1rem;
 }
 
-
-// Mise en forme des blocs conteneurs
+// Positionnement des blocs conteneurs
 section{
   padding: 2.7rem 1rem 3.5rem;
 }
@@ -32,16 +25,18 @@ section{
   flex-flow: column wrap;
 }
 
+//
+//styles textuels
+//
+
 // trouver comment remplacer par un reset global
 h1, h2, h3, h4, h5, p{
   margin: 0;
   padding: 0;
   line-height: 2rem;
 }
+//
 
-//
-//styles textuels
-//
 p{
   font-family: 'Roboto Regular';
 }
@@ -56,6 +51,22 @@ h2{
 
 h3{
   font: 1.5rem 'Roboto Bold';
+  padding-bottom: 1.5rem;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
 }
 
 
+// Reset Firefox pour formulaires
+input::-moz-placeholder{
+    opacity: 1;
+    -webkit-appearance: none;
+  }

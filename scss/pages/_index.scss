@@ -9,7 +9,7 @@ accueil
 //
 .localisation{
   @include flexcenter;
-  background-color: darken($bg-color,7%);
+  background-color: darken($bg-color,10%);
   margin-top: 0.3rem;
   padding: 0.7rem 0;
 
@@ -29,7 +29,7 @@ accueil
   @include flexcenter;
   flex-flow: column wrap;
   text-align: center;
-  background-color: darken($bg-color,2%);
+  background-color: darken($bg-color,5%);
 
     button{
       margin-top: 1rem;
@@ -43,6 +43,13 @@ accueil
 }
 
 
+//
+// restaurants
+//
+.restaurants{
+  background-color: darken($bg-color,5%);
+  
+}
 
 //test//
 ul{

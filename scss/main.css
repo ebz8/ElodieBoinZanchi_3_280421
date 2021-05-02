@@ -1,4 +1,11 @@
-/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+@charset "UTF-8";
+/**
+-----------------------
+modern-normalize v1.0.0
+| MIT License |
+https://github.com/sindresorhus/modern-normalize
+-----------------------
+
 /*
 Document
 ========
@@ -269,31 +276,244 @@ summary {
   display: list-item;
 }
 
+/**
+-----------------------
+éléments de typographie
+-----------------------
+*/
 @font-face {
   font-family: 'Shrikhand';
   src: url(/resources/fonts/Shrikhand-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Roboto Light';
   src: url(/resources/fonts/Roboto-Light.ttf);
-  font-style: light;
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Roboto Regular';
   src: url(/resources/fonts/Roboto-Regular.ttf);
-  font-style: regular;
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Roboto Bold';
   src: url(/resources/fonts/Roboto-Bold.ttf);
-  font-style: bold;
+}
+
+/**
+----------------------
+bases
+----------------------
+*/
+body {
+  margin: 0 auto;
+  font-family: 'Roboto Light';
+  font-size: 1rem;
+}
+
+section {
+  padding: 2.7rem 1rem 3.5rem;
+}
+
+.page--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+  line-height: 2rem;
 }
 
 p {
-  font-family: 'Roboto';
-  font-weight: light;
+  font-family: 'Roboto Regular';
+}
+
+h1 {
+  font: 2rem 'Shrikhand';
+}
+
+h2 {
+  font: 1.1rem 'Roboto Light';
+}
+
+h3 {
+  font: 1.5rem 'Roboto Bold';
+  padding-bottom: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+input::-moz-placeholder {
+  opacity: 1;
+  -webkit-appearance: none;
+}
+
+/**
+----------------------
+header - logo
+----------------------
+*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  width: 100vw;
+  padding: 1rem 0.3rem 0.3rem;
+  -webkit-box-shadow: 0 0 10px 0 rgba(56, 56, 56, 0.6);
+          box-shadow: 0 0 10px 0 rgba(56, 56, 56, 0.6);
+}
+
+/**
+-----------------------
+style du footer
+-----------------------
+*/
+footer {
+  background-color: #333333;
+  width: 100vw;
+  padding: 1rem 1.5rem;
+  color: white;
+}
+
+footer ul {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+footer ul .fa-utensils {
+  font-size: 0.8rem;
+  padding-right: 0.5rem;
+}
+
+footer ul .fa-hands-helping {
+  font-size: 0.7rem;
+  padding-right: 0.2rem;
+}
+
+footer ul a {
+  color: white;
+}
+
+.footer__logo {
+  font-family: 'Shrikhand';
+}
+
+/**
+-----------------------
+boutons
+-----------------------
+*/
+.general-button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff7ad9), to(#9256dc));
+  background: linear-gradient(#ff7ad9, #9256dc);
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  -webkit-box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/**
+----------------------
+accueil
+----------------------
+*/
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  background-color: #e6e6e6;
+  margin-top: 0.3rem;
+  padding: 0.7rem 0;
+}
+
+.localisation input {
+  border: none;
+  background-color: transparent;
+  width: 50vw;
+  font-family: 'Roboto Regular';
+  text-align: center;
+}
+
+.exploration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.exploration button {
+  margin-top: 1rem;
+}
+
+.restaurants {
+  background-color: #f2f2f2;
+}
+
+ul img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,3 +3,33 @@
 style du footer
 -----------------------
 */
+
+footer{
+  background-color: darken($bg-color,80%);
+  width: 100vw;
+  padding: 1rem 1.5rem;
+  color: white;
+
+  ul{
+    font-size: 0.9rem;  
+    line-height: 1.5rem;
+
+    .fa-utensils{
+      font-size: 0.8rem;
+      padding-right: 0.5rem;
+    }
+    .fa-hands-helping{
+      font-size: 0.7rem;
+      padding-right: 0.2rem;
+
+    }
+
+    a{
+      color: white;
+    }
+  }
+}
+
+.footer__logo{
+  font-family: 'Shrikhand';
+}
