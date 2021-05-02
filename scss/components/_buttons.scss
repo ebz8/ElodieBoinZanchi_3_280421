@@ -32,12 +32,13 @@ boutons
 // gris et ombre portée
 .demo-button{
   width: 100%;
+  max-width: 350px;
+  margin: 1.5rem auto 0;
   padding: 1.5rem;
-  margin-top: 1.5rem;
   background-color: darken($bg-color,4%);
+  font: 0.9rem 'Roboto Regular';
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1.5rem;
-  font: 0.9rem 'Roboto Regular';
 }
 
 .step{
