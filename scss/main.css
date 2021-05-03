@@ -12,6 +12,8 @@ Document
 /**
 Use a better box model (opinionated).
 */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;500;700;900&display=swap");
 *,
 *::before,
 *::after {
@@ -280,36 +282,6 @@ summary {
 fonts
 -----------------------
 */
-@font-face {
-  font-family: 'Shrikhand';
-  src: url(/resources/fonts/Shrikhand-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'Roboto Thin';
-  src: url(/resources/fonts/Roboto-Thin.ttf);
-}
-
-@font-face {
-  font-family: 'Roboto Light';
-  src: url(/resources/fonts/Roboto-Light.ttf);
-}
-
-@font-face {
-  font-family: 'Roboto Regular';
-  src: url(/resources/fonts/Roboto-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'Roboto Medium';
-  src: url(/resources/fonts/Roboto-Medium.ttf);
-}
-
-@font-face {
-  font-family: 'Roboto Bold';
-  src: url(/resources/fonts/Roboto-Bold.ttf);
-}
-
 /**
 ----------------------
 bases
@@ -317,7 +289,7 @@ bases
 */
 body {
   margin: 0 auto;
-  font-family: 'Roboto Light';
+  font-family: 'Roboto';
   font-size: 1rem;
 }
 
@@ -358,7 +330,8 @@ h1, h2, h3, h4, h5, p {
 }
 
 p {
-  font-family: 'Roboto Regular';
+  font-family: 'Roboto';
+  font-weight: 500;
 }
 
 h1 {
@@ -366,26 +339,29 @@ h1 {
 }
 
 h2 {
-  font: 1.1rem 'Roboto Light';
+  font: 1.1rem 'Roboto';
   line-height: 1.5rem;
+  font-weight: 200;
 }
 
 h3 {
-  font: 1.5rem 'Roboto Bold';
+  font: 1.5rem 'Roboto';
   line-height: 2rem;
 }
 
 h4 {
-  font: 1rem 'Roboto Bold';
+  font: 1rem 'Roboto';
 }
 
 h5 {
-  font: 1rem 'Roboto Light';
+  font: 1rem 'Roboto';
+  font-weight: 200;
 }
 
 a {
   color: black;
   text-decoration: none;
+  font-weight: 200;
 }
 
 ul {
@@ -481,7 +457,7 @@ boutons
   padding: 0.3rem 0.7rem;
   background-color: #98e2cf;
   color: #26876f;
-  font: 0.8rem 'Roboto Regular';
+  font: 0.8rem 'Roboto';
   border-radius: 0.2rem;
 }
 
@@ -491,7 +467,7 @@ boutons
   margin: 1.5rem auto 0;
   padding: 1.5rem;
   background-color: whitesmoke;
-  font: 0.9rem 'Roboto Regular';
+  font: 0.9rem 'Roboto';
   -webkit-box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1.5rem;
@@ -504,7 +480,7 @@ boutons
   border-radius: 100%;
   background-color: #9256dc;
   color: white;
-  font: 0.9rem 'Roboto Regular';
+  font: 0.9rem 'Roboto';
 }
 
 /**
@@ -532,7 +508,8 @@ accueil
   border: none;
   background-color: transparent;
   width: 50vw;
-  font-family: 'Roboto Regular';
+  font-family: 'Roboto';
+  font-weight: 500;
   text-align: center;
 }
 

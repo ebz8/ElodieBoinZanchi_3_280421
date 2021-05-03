@@ -6,7 +6,7 @@ bases
 
 body{
   margin: 0 auto;
-  font-family: 'Roboto Light';
+  font-family: 'Roboto';
   font-size: 1rem;
 }
 
@@ -37,7 +37,8 @@ h1, h2, h3, h4, h5, p{
 //
 
 p{
-  font-family: 'Roboto Regular';
+  font-family: 'Roboto';
+  font-weight: 500;
 }
 
 h1{
@@ -45,26 +46,30 @@ h1{
 }
 
 h2{
-  font: 1.1rem 'Roboto Light';
+  font: 1.1rem 'Roboto';
   line-height: 1.5rem;
+  font-weight: 200;
   }
 
 h3{
-  font: 1.5rem 'Roboto Bold';
+  font: 1.5rem 'Roboto';
   line-height: 2rem;
 }
 
 h4{
-  font: 1rem 'Roboto Bold';
+  font: 1rem 'Roboto';
 }
 
 h5{
-  font: 1rem 'Roboto Light';
+  font: 1rem 'Roboto';
+  font-weight: 200;
+
 }
 
 a{
   color: black;
   text-decoration: none;
+  font-weight: 200;
 }
 
 ul{
