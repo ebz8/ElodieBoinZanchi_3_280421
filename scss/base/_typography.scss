@@ -10,6 +10,11 @@ fonts
 }
 
 @font-face{
+    font-family: 'Roboto Thin'; 
+    src: url(/resources/fonts/Roboto-Thin.ttf);
+}
+
+@font-face{
     font-family: 'Roboto Light'; 
     src: url(/resources/fonts/Roboto-Light.ttf);
 }
@@ -17,6 +22,11 @@ fonts
 @font-face{
     font-family: 'Roboto Regular'; 
     src: url(/resources/fonts/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Roboto Medium'; 
+    src: url(/resources/fonts/Roboto-Medium.ttf);
 }
 
 @font-face{

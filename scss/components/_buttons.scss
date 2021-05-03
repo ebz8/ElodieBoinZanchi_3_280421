@@ -5,6 +5,7 @@ boutons
 */
 
 // bouton dégradé
+//
 .general-button{
     background: linear-gradient($secondary-color, $primary-color);
     padding: 0.9rem 1.5rem;
@@ -15,7 +16,7 @@ boutons
 }
 
 // bouton "Nouveau"
-// se superpose au contenu de son bloc parent
+// superposé au contenu de son bloc parent
 .new-button{
   position: absolute;
   top: 0.8rem;
