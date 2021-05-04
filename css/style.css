@@ -571,6 +571,7 @@ Menus
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 0.5rem 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
