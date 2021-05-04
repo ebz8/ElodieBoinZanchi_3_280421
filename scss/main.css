@@ -483,6 +483,10 @@ boutons
   font: 0.9rem 'Roboto';
 }
 
+.fa-heart {
+  font-size: 1.5rem;
+}
+
 /**
 ----------------------
 accueil
@@ -584,7 +588,26 @@ accueil
   padding: 1rem;
 }
 
-.card--legend__container .fa-heart {
-  font-size: 1.5rem;
+.restaurant-vignette {
+  width: 100vw;
+  border-top: 1px solid black;
+}
+
+.restaurant-carte {
+  padding-top: 2rem;
+  background-color: whitesmoke;
+  border-radius: 2rem;
+}
+
+.restaurant-titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
