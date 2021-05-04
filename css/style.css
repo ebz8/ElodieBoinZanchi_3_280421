@@ -371,6 +371,11 @@ header {
   padding: 1rem 0.3rem 0.3rem;
   box-shadow: 0 0 10px 0 rgba(56, 56, 56, 0.6);
 }
+header a {
+  position: absolute;
+  left: 1rem;
+  font-size: 1.2rem;
+}
 
 /**
 -----------------------
