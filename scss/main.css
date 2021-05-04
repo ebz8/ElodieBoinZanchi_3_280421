@@ -588,6 +588,11 @@ accueil
   padding: 1rem;
 }
 
+/**
+----------------------
+Menus
+----------------------
+*/
 .restaurant-vignette {
   width: 100vw;
   border-top: 1px solid black;
