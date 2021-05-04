@@ -4,12 +4,12 @@ Menus
 ----------------------
 */
 
-.restaurant-vignette{
+.menu-vignette{
   width: 100vw;
   border-top: 1px solid black;
 }
 
-.restaurant-carte{
+.menu{
   position: relative;
   top: -2rem;
   padding-top: 2rem;
@@ -17,7 +17,7 @@ Menus
   border-radius: 2rem;
 }
 
-.restaurant-titre{
+.menu-title{
   display: flex;
   justify-content: space-between;
   align-items: center;
