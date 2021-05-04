@@ -10,6 +10,8 @@ Menus
 }
 
 .restaurant-carte{
+  position: relative;
+  top: -2rem;
   padding-top: 2rem;
   background-color: darken($bg-color,4%);
   border-radius: 2rem;
