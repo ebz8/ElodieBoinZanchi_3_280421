@@ -42,6 +42,7 @@ boutons
   border-radius: 1.5rem;
 }
 
+// numérotation d'étapes
 .step{
   position: relative;
   left: -2rem;
@@ -52,7 +53,25 @@ boutons
   font: 0.9rem 'Roboto';
 }
 
+// button-like
 .fa-heart{
     font-size: 1.5rem;
+}
+
+.menu-button
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.8rem;
+  text-align: left;
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+
+  .price{
+    align-self: flex-end;
+  }
 }
 

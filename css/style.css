@@ -459,6 +459,21 @@ boutons
   font-size: 1.5rem;
 }
 
+.menu-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.8rem;
+  text-align: left;
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.menu-button .price {
+  align-self: flex-end;
+}
+
 /**
 ----------------------
 accueil
