@@ -453,7 +453,7 @@ boutons
           box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.secondary-button {
+.secondary-button, .secondary-button--active {
   width: 95%;
   max-width: 350px;
   margin: 1.5rem auto 0;
@@ -465,7 +465,7 @@ boutons
   border-radius: 1.5rem;
 }
 
-.secondary-button .fas {
+.secondary-button .fas, .secondary-button--active .fas {
   padding-right: 1rem;
   color: gray;
   font-size: 1.1rem;
@@ -501,6 +501,15 @@ boutons
 .tertiary-button .price {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.tertiary-button .fas {
+  display: none;
+}
+
+.tertiary-button:hover {
+  display: block;
+  background-color: yellowgreen;
 }
 
 .new-button {

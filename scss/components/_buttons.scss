@@ -39,7 +39,9 @@ boutons
 }
 // version active: îcone et fond colorés
 .secondary-button--active{
+  @extend .secondary-button;
   background-color: lighten($primary-color, 37%);
+  
   .fas{
     padding-right: 1rem;
     color: $primary-color;
@@ -62,6 +64,15 @@ boutons
 
   .price{
     align-self: flex-end;
+  }
+
+  .fas{
+    display: none;
+  }
+
+  &:hover{
+    display: block;
+    background-color: yellowgreen;
   }
 }
 
