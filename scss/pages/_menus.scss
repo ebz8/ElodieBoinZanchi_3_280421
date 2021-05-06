@@ -4,7 +4,7 @@ Menus
 ----------------------
 */
 
-.menu-vignette{
+.vignette{
   width: 100vw;
   border-top: 1px solid black;
 }
@@ -17,9 +17,9 @@ Menus
   border-radius: 2rem;
 }
 
-.menu-title{
+.menu__title{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0.5rem 2rem;
+  padding: 0 0.5rem 1.5rem;
 }

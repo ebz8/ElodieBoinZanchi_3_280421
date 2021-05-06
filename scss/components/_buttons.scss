@@ -70,9 +70,11 @@ boutons
     display: none;
   }
 
-  &:hover{
-    display: block;
-    background-color: yellowgreen;
+  &:hover .fas{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: $tertiary-color;
   }
 }
 
