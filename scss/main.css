@@ -442,7 +442,7 @@ footer ul a {
 boutons
 -----------------------
 */
-.general-button {
+.main-button {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff7ad9), to(#9256dc));
   background: linear-gradient(#ff7ad9, #9256dc);
   padding: 0.9rem 1.5rem;
@@ -453,21 +453,7 @@ boutons
           box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.new-button {
-  position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  padding: 0.3rem 0.7rem;
-  background-color: #98e2cf;
-  color: #26876f;
-  font: 0.8rem 'Roboto';
-  border-radius: 0.2rem;
-}
-
-.demo__button {
+.secondary-button {
   width: 95%;
   max-width: 350px;
   margin: 1.5rem auto 0;
@@ -479,37 +465,23 @@ boutons
   border-radius: 1.5rem;
 }
 
-.demo__button .fas {
+.secondary-button .fas {
   padding-right: 1rem;
   color: gray;
   font-size: 1.1rem;
 }
 
-.demo__button--active {
+.secondary-button--active {
   background-color: #f7f2fc;
 }
 
-.demo__button--active .fas {
+.secondary-button--active .fas {
   padding-right: 1rem;
   color: #9256dc;
   font-size: 1.1rem;
 }
 
-.step {
-  position: relative;
-  left: -2rem;
-  padding: 0.3rem 0.5rem 0.1rem;
-  border-radius: 100%;
-  background-color: #9256dc;
-  color: white;
-  font: 0.9rem 'Roboto';
-}
-
-.fa-heart {
-  font-size: 1.5rem;
-}
-
-.menu-button {
+.tertiary-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,9 +498,37 @@ boutons
           box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.menu-button .price {
+.tertiary-button .price {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.new-button {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 0.3rem 0.7rem;
+  background-color: #98e2cf;
+  color: #26876f;
+  font: 0.8rem 'Roboto';
+  border-radius: 0.2rem;
+}
+
+.step {
+  position: relative;
+  left: -2rem;
+  padding: 0.3rem 0.5rem 0.1rem;
+  border-radius: 100%;
+  background-color: #9256dc;
+  color: white;
+  font: 0.9rem 'Roboto';
+}
+
+.fa-heart {
+  font-size: 1.5rem;
 }
 
 /**

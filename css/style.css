@@ -413,13 +413,53 @@ footer ul a {
 boutons
 -----------------------
 */
-.general-button {
+.main-button {
   background: linear-gradient(#ff7ad9, #9256dc);
   padding: 0.9rem 1.5rem;
   border: none;
   border-radius: 1.5rem;
   color: white;
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-button {
+  width: 95%;
+  max-width: 350px;
+  margin: 1.5rem auto 0;
+  padding: 1.5rem;
+  background-color: whitesmoke;
+  font: 0.9rem "Roboto";
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+}
+.secondary-button .fas {
+  padding-right: 1rem;
+  color: gray;
+  font-size: 1.1rem;
+}
+
+.secondary-button--active {
+  background-color: #f7f2fc;
+}
+.secondary-button--active .fas {
+  padding-right: 1rem;
+  color: #9256dc;
+  font-size: 1.1rem;
+}
+
+.tertiary-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.8rem;
+  text-align: left;
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.tertiary-button .price {
+  align-self: flex-end;
 }
 
 .new-button {
@@ -434,31 +474,6 @@ boutons
   border-radius: 0.2rem;
 }
 
-.demo__button {
-  width: 95%;
-  max-width: 350px;
-  margin: 1.5rem auto 0;
-  padding: 1.5rem;
-  background-color: whitesmoke;
-  font: 0.9rem "Roboto";
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 1.5rem;
-}
-.demo__button .fas {
-  padding-right: 1rem;
-  color: gray;
-  font-size: 1.1rem;
-}
-
-.demo__button--active {
-  background-color: #f7f2fc;
-}
-.demo__button--active .fas {
-  padding-right: 1rem;
-  color: #9256dc;
-  font-size: 1.1rem;
-}
-
 .step {
   position: relative;
   left: -2rem;
@@ -471,21 +486,6 @@ boutons
 
 .fa-heart {
   font-size: 1.5rem;
-}
-
-.menu-button {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0.8rem;
-  text-align: left;
-  background-color: white;
-  border: none;
-  border-radius: 1rem;
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
-}
-.menu-button .price {
-  align-self: flex-end;
 }
 
 /**
