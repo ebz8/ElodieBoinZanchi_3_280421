@@ -467,7 +467,7 @@ boutons
   border-radius: 0.2rem;
 }
 
-.demo-button {
+.demo__button {
   width: 95%;
   max-width: 350px;
   margin: 1.5rem auto 0;
@@ -477,6 +477,22 @@ boutons
   -webkit-box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1.5rem;
+}
+
+.demo__button .fas {
+  padding-right: 1rem;
+  color: gray;
+  font-size: 1.1rem;
+}
+
+.demo__button--active {
+  background-color: #f7f2fc;
+}
+
+.demo__button--active .fas {
+  padding-right: 1rem;
+  color: #9256dc;
+  font-size: 1.1rem;
 }
 
 .step {
@@ -566,20 +582,6 @@ accueil
 
 .exploration button {
   margin-top: 1rem;
-}
-
-.demo .fas {
-  padding-right: 1rem;
-  color: gray;
-  font-size: 1.1rem;
-}
-
-.demo .active {
-  background-color: #f7f2fc;
-}
-
-.demo .active .fas {
-  color: #9256dc;
 }
 
 .restaurants {

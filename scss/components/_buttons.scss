@@ -31,7 +31,7 @@ boutons
 
 // bouton largeur 100%
 // gris et ombre portée
-.demo-button{
+.demo__button{
   width: 95%;
   max-width: 350px;
   margin: 1.5rem auto 0;
@@ -40,6 +40,21 @@ boutons
   font: 0.9rem 'Roboto';
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1.5rem;
+
+  .fas{
+    padding-right: 1rem;
+    color: darken($bg-color,50%);
+    font-size: 1.1rem;
+  }
+}
+
+.demo__button--active{
+  background-color: lighten($primary-color, 37%);
+  .fas{
+    padding-right: 1rem;
+    color: $primary-color;
+    font-size: 1.1rem;
+  }
 }
 
 // numérotation d'étapes
