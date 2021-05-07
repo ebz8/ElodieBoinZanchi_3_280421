@@ -12,7 +12,7 @@ body{
 
 // Positionnement des blocs conteneurs
 section{
-  padding: 2.5rem 1.2rem 3.5rem;
+  padding: 3rem 1.2rem 3.5rem;
 }
 
 .page-container{
@@ -49,6 +49,7 @@ h1, .restaurant-name{
 h2{
   font-size: 1.5rem;
   line-height: 1.7rem;
+  font-weight: 500;
 }
 
 h3{
@@ -60,11 +61,11 @@ h3{
 }
 
 h4{
-  font: 1rem 'Roboto';
+  font: 1.1rem 'Roboto';
 }
 
 h5{
-  font: 1rem 'Roboto';
+  font: 1.05rem 'Roboto';
   font-weight: 200;
 }
 
@@ -77,6 +78,7 @@ a{
 ul{
   list-style-type: none;
   padding: 0;
+  margin: 0.3rem 0;
 }
 
 .section-name{
