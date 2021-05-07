@@ -43,7 +43,7 @@ p{
 }
 
 h1, .restaurant-name{
-  font: 1.9rem 'Shrikhand';
+  font: 1.8rem 'Shrikhand';
 }
 
 h2{
@@ -84,12 +84,13 @@ ul{
 .section-name{
   text-transform: uppercase;
   font-weight: 200;
-  font-size: 1.2rem;
+  font-size: 1rem;
 
   &::after{
     content: "";
     display: block;
-    width: 3rem;
+    width: 2.5rem;
+    padding-bottom: 0.2rem;
     border-bottom: 0.2rem $tertiary-color solid;
   }
 }
