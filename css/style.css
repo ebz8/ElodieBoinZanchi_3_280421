@@ -495,7 +495,7 @@ boutons
   position: absolute;
   top: 0.8rem;
   right: 0.8rem;
-  width: max-content;
+  width: fit-content;
   padding: 0.3rem 0.7rem;
   background-color: #98e2cf;
   color: #26876f;
