@@ -537,10 +537,11 @@ accueil
 .localisation input {
   border: none;
   background-color: transparent;
-  width: 50vw;
+  width: 35vw;
   font-family: "Roboto";
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
+  color: black;
 }
 
 .exploration {
@@ -550,14 +551,14 @@ accueil
   width: 100vw;
   flex-flow: column wrap;
   text-align: center;
-  background-color: whitesmoke;
+  background-color: #f7f7f7;
 }
 .exploration button {
   margin-top: 1rem;
 }
 
 .restaurants {
-  background-color: whitesmoke;
+  background-color: #f7f7f7;
   padding-bottom: 5rem;
 }
 .restaurants ul {
@@ -622,7 +623,7 @@ Menus
 }
 @media screen and (min-width: 544px) {
   .menu__section {
-    max-width: 60%;
+    max-width: 70%;
   }
 }
 

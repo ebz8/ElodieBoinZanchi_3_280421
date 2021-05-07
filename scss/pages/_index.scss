@@ -16,10 +16,11 @@ accueil
     input{
       border: none;
       background-color: transparent;
-      width: 50vw;
+      width: 35vw;
       font-family: 'Roboto';
-      font-weight: 500;
+      font-weight: 400;
       text-align: center;
+      color: black;
     }
 }
 
@@ -30,7 +31,7 @@ accueil
   @include flexcenter;
   flex-flow: column wrap;
   text-align: center;
-  background-color: darken($bg-color,4%);
+  background-color: darken($bg-color,3%);
 
     button{
       margin-top: 1rem;
@@ -46,7 +47,7 @@ accueil
 // restaurants
 //
 .restaurants{
-  background-color: darken($bg-color,4%);
+  background-color: darken($bg-color,3%);
   padding-bottom: 5rem;
 
   ul{
