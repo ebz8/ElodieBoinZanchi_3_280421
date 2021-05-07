@@ -495,7 +495,7 @@ boutons
   position: absolute;
   top: 0.8rem;
   right: 0.8rem;
-  width: min-content;
+  width: max-content;
   padding: 0.3rem 0.7rem;
   background-color: #98e2cf;
   color: #26876f;
@@ -515,6 +515,7 @@ boutons
 
 .fa-heart {
   font-size: 1.5rem;
+  font-weight: 200;
 }
 
 /**
