@@ -111,6 +111,10 @@ boutons
 .fa-heart{
     font-size: 1.5rem;
     font-weight: 200;
+
+    &:hover{
+      color: $secondary-color;
+    }
 }
 
 

@@ -568,6 +568,10 @@ boutons
   font-weight: 200;
 }
 
+.fa-heart:hover {
+  color: #ff7ad9;
+}
+
 /**
 ----------------------
 accueil
