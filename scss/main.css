@@ -711,7 +711,7 @@ Menus
   }
 }
 
-#checkout {
+#menu__checkout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
