@@ -287,7 +287,6 @@ bases
 */
 body {
   margin: 0 auto;
-  max-width: 1280px;
   font-family: 'Roboto';
   font-size: 1rem;
 }
@@ -408,8 +407,8 @@ header {
   width: 100vw;
   width: 100%;
   padding: 0.8rem 0.3rem 0.3rem;
-  -webkit-box-shadow: 0 10px 0 0 rgba(56, 56, 56, 0.6);
-          box-shadow: 0 10px 0 0 rgba(56, 56, 56, 0.6);
+  -webkit-box-shadow: 0 0 15px 0 rgba(56, 56, 56, 0.6);
+          box-shadow: 0 0 15px 0 rgba(56, 56, 56, 0.6);
 }
 
 header a {
@@ -592,6 +591,7 @@ accueil
   border: none;
   background-color: transparent;
   width: 40vw;
+  max-width: 200px;
   font-family: 'Roboto';
   font-weight: 400;
   text-align: center;

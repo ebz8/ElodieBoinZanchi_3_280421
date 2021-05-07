@@ -9,12 +9,11 @@ header
   @include flexcenter;
   width: 100%;
   padding: 0.8rem 0.3rem 0.3rem;
-  box-shadow: 0 10px 0 0 rgba(56, 56, 56, 0.6);
+  box-shadow: 0 0 15px 0 rgba(56, 56, 56, 0.6);
 
   a{
     position: absolute;
     left: 1rem;
     font-size: 1.2rem;
-  }
-  
+  } 
 }
