@@ -55,6 +55,7 @@ accueil
 
     img{
       width: 100%;
+      min-height: 174px;
       max-height: 174px;
       object-fit: cover;
       border-radius: 1rem 1rem 0 0;
@@ -62,13 +63,16 @@ accueil
   }
   
   li{
+    width: 100%;
     position: relative;
     margin-top: 1rem;
     background-color: $bg-color;
     border-radius: 1rem;
+
     @include mobile-large{
-      width: 50%;
-    };
+      width: 48%;
+      margin: 1%;
+    }
   }
 }
 

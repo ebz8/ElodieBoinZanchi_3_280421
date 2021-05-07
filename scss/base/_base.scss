@@ -15,14 +15,14 @@ section{
   padding: 2.7rem 1rem 4rem;
 }
 
-.page--container{
+.page-container{
   @include flexcenter;
   flex-flow: column wrap;
 }
 
 .container{
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
 }
 
 //
