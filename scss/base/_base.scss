@@ -90,7 +90,16 @@ ul{
   }
 }
 
-
+.menu__section{
+  .h4{
+    font: 1.1rem 'Roboto';
+  }
+  
+  .h5{
+    font: 0.9rem 'Roboto';
+    font-weight: 200;
+  }  
+}
 
 // Reset Firefox pour formulaires
 input::-moz-placeholder{
