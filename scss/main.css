@@ -650,6 +650,12 @@ accueil
   border-radius: 1rem;
 }
 
+@media screen and (min-width: 544px) {
+  .restaurants li {
+    width: 50%;
+  }
+}
+
 .card--legend__container {
   display: -webkit-box;
   display: -ms-flexbox;

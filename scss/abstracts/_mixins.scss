@@ -7,11 +7,27 @@
     width: 100vw;
   }
 
-// Raccourcis d'éléments
-// Mise en forme basique des cartes
-// @mixin cards--style{
-//     width: 100%;
-//     height: auto;
-//     object-fit: cover;
-//     background-color: $bg-color;
-// }
+// media queries : ajustements mobile paysage
+@mixin mobile-large{
+  @media screen and (min-width: map-get($breakpoint, mobile)){
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media screen and (min-width: map-get($breakpoint, tablet)){
+    @content;
+  }
+}
+
+@mixin small-desk{
+  @media screen and (min-width: map-get($breakpoint, small-desk)){
+    @content;
+  }
+}
+
+@mixin large-desk{
+  @media screen and (min-width: map-get($breakpoint, large-desk)){
+    @content;
+  }
+}

@@ -6,13 +6,13 @@ $bg-color: hsl(0, 0%, 100%);
 
 // breakpoints
 $mobile: 544px;
-$tablette: 768px;
+$tablet: 768px;
 $small-desk: 1012px;
 $large-desk: 1280px;
 
 $breakpoint: (
     mobile: $mobile,
-    tablette: $tablette,
+    tablet: $tablet,
     small-desk: $small-desk,
     large-desk: $large-desk
 ) !default;

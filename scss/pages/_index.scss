@@ -66,6 +66,9 @@ accueil
     margin-top: 1rem;
     background-color: $bg-color;
     border-radius: 1rem;
+    @include mobile-large{
+      width: 50%;
+    };
   }
 }
 
