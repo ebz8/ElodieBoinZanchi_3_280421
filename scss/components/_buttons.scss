@@ -13,7 +13,7 @@ boutons
 .main-button{
   margin: 0 auto;
   background: linear-gradient($secondary-color, $primary-color);
-  padding: 0.9rem 1.5rem;
+  padding: 0.9rem 1.4rem;
   border: none;
   color: white;
   border-radius: 1.5rem;
@@ -28,14 +28,16 @@ boutons
   margin: 1.5rem auto 0;
   padding: 1.5rem;
   background-color: darken($bg-color,4%);
-  font: 0.9rem 'Roboto';
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1.5rem;
 
   .fas{
-    padding-right: 1rem;
+    margin-right: 1.5rem;
+    margin-left: -0.5rem;
+    width: 1rem;
     color: darken($bg-color,50%);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    
   }
 }
 // version active: îcone et fond colorés
@@ -105,6 +107,7 @@ boutons
   background-color: $primary-color;
   color: white;
   font: 0.9rem 'Roboto';
+  font-weight: 200;
 }
 
 // button-like

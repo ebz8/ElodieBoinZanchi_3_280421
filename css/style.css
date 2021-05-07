@@ -289,7 +289,7 @@ body {
 }
 
 section {
-  padding: 2.5rem 1.2rem 4rem;
+  padding: 2.5rem 1.2rem 3.5rem;
 }
 
 .page-container {
@@ -320,12 +320,13 @@ h1, .restaurant-name {
 }
 
 h2 {
-  font: 1.5rem "Roboto";
+  font-size: 1.5rem;
   line-height: 1.7rem;
 }
 
 h3 {
-  line-height: 1.2rem;
+  font-size: 1.13rem;
+  line-height: 1.4rem;
   font-weight: 200;
   color: #4d4d4d;
 }
@@ -386,7 +387,7 @@ header {
   align-items: center;
   width: 100vw;
   width: 100vw;
-  padding: 1rem 0.3rem 0.3rem;
+  padding: 0.8rem 0.3rem 0.3rem;
   box-shadow: 0 0 10px 0 rgba(56, 56, 56, 0.6);
 }
 header a {
@@ -432,7 +433,7 @@ boutons
 .main-button {
   margin: 0 auto;
   background: linear-gradient(#ff7ad9, #9256dc);
-  padding: 0.9rem 1.5rem;
+  padding: 0.9rem 1.4rem;
   border: none;
   color: white;
   border-radius: 1.5rem;
@@ -445,14 +446,15 @@ boutons
   margin: 1.5rem auto 0;
   padding: 1.5rem;
   background-color: whitesmoke;
-  font: 0.9rem "Roboto";
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1.5rem;
 }
 .secondary-button .fas, .secondary-button--active .fas {
-  padding-right: 1rem;
+  margin-right: 1.5rem;
+  margin-left: -0.5rem;
+  width: 1rem;
   color: gray;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .secondary-button--active {
@@ -508,6 +510,7 @@ boutons
   background-color: #9256dc;
   color: white;
   font: 0.9rem "Roboto";
+  font-weight: 200;
 }
 
 .fa-heart {
