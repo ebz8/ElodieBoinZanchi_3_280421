@@ -5,8 +5,13 @@ Menus
 */
 
 .vignette{
-  width: 100vw;
-  // border-top: 1px solid black;
+  width: 100%;
+  max-height: 35vh;
+  object-fit: cover;
+
+  @include mobile-large{
+    max-height: 30vh;
+  }
 }
 
 .menu{
@@ -28,11 +33,26 @@ Menus
 
 .menu__section{
   width: 100%;
+  
+  .h4{
+    font: 1.1rem 'Roboto';
+  }
+  
+  .h5{
+    font: 0.9rem 'Roboto';
+    font-weight: 200;
+  } 
 
   @include mobile-large{
     max-width: 70%;
   }
 }
+
+// .section__plat{
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+// }
 
 #menu__checkout
 {
