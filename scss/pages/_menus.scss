@@ -12,8 +12,6 @@ Menus
 .menu{
   position: relative;
   top: -2rem;
-  display: flex;
-  flex-flow: row wrap;
   padding: 2rem 1rem;
   margin: auto 0;
   background-color: darken($bg-color,4%);
@@ -30,4 +28,16 @@ Menus
 
 .menu__section{
   width: 100%;
+
+  @include mobile-large{
+    max-width: 60%;
+  }
+}
+
+#checkout
+{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
 }

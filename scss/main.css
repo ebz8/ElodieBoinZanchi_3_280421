@@ -681,13 +681,6 @@ Menus
 .menu {
   position: relative;
   top: -2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
   padding: 2rem 1rem;
   margin: auto 0;
   background-color: whitesmoke;
@@ -710,5 +703,22 @@ Menus
 
 .menu__section {
   width: 100%;
+}
+
+@media screen and (min-width: 544px) {
+  .menu__section {
+    max-width: 60%;
+  }
+}
+
+#checkout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
