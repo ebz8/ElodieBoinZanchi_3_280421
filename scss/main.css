@@ -162,8 +162,6 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
   font-size: 100%;
   /* 1 */
   line-height: 1.15;
@@ -294,7 +292,7 @@ body {
 }
 
 section {
-  padding: 2.7rem 1rem 4rem;
+  padding: 2.5rem 1.2rem 4rem;
 }
 
 .page-container {
@@ -335,18 +333,18 @@ p {
 }
 
 h1, .restaurant-name {
-  font: 1.8rem 'Shrikhand';
+  font: 1.9rem 'Shrikhand';
 }
 
 h2 {
-  font: 1.1rem 'Roboto';
-  line-height: 1.5rem;
-  font-weight: 200;
+  font: 1.5rem 'Roboto';
+  line-height: 1.7rem;
 }
 
 h3 {
-  font: 1.5rem 'Roboto';
-  line-height: 2rem;
+  line-height: 1.2rem;
+  font-weight: 200;
+  color: #4d4d4d;
 }
 
 h4 {
@@ -588,7 +586,7 @@ accueil
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
-  background-color: #e6e6e6;
+  background-color: #e8e8e8;
   margin-top: 0.3rem;
   padding: 0.7rem 0;
 }
@@ -596,7 +594,7 @@ accueil
 .localisation input {
   border: none;
   background-color: transparent;
-  width: 35vw;
+  width: 40vw;
   font-family: 'Roboto';
   font-weight: 400;
   text-align: center;
@@ -620,6 +618,14 @@ accueil
           flex-flow: column wrap;
   text-align: center;
   background-color: #f7f7f7;
+}
+
+.exploration h2 {
+  padding: 0 2rem 1rem;
+}
+
+.exploration h3 {
+  padding: 0 0 1rem;
 }
 
 .exploration button {
