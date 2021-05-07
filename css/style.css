@@ -579,7 +579,8 @@ Menus
   top: -2rem;
   display: flex;
   flex-flow: row wrap;
-  padding-top: 2rem;
+  padding: 2rem 1rem;
+  margin: auto 0;
   background-color: whitesmoke;
   border-radius: 2rem;
 }

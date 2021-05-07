@@ -660,7 +660,8 @@ Menus
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  padding-top: 2rem;
+  padding: 2rem 1rem;
+  margin: auto 0;
   background-color: whitesmoke;
   border-radius: 2rem;
 }
