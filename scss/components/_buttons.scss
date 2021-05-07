@@ -11,12 +11,13 @@ boutons
 // bouton dégradé, coins arrondis
 // ex: Explorer nos restaurants, Commander
 .main-button{
-    background: linear-gradient($secondary-color, $primary-color);
-    padding: 0.9rem 1.5rem;
-    border: none;
-    border-radius: 1.5rem;
-    color: white;
-    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  background: linear-gradient($secondary-color, $primary-color);
+  padding: 0.9rem 1.5rem;
+  border: none;
+  color: white;
+  border-radius: 1.5rem;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 // bouton large, monochrome, contenant icône

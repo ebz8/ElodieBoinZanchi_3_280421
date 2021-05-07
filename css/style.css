@@ -399,13 +399,10 @@ footer ul {
   font-size: 0.9rem;
   line-height: 1.5rem;
 }
-footer ul .fa-utensils {
+footer ul .fas {
   font-size: 0.8rem;
-  padding-right: 0.5rem;
-}
-footer ul .fa-hands-helping {
-  font-size: 0.7rem;
-  padding-right: 0.2rem;
+  margin-right: 1rem;
+  width: 0.2rem;
 }
 footer ul a {
   color: white;
@@ -421,11 +418,12 @@ boutons
 -----------------------
 */
 .main-button {
+  margin: 0 auto;
   background: linear-gradient(#ff7ad9, #9256dc);
   padding: 0.9rem 1.5rem;
   border: none;
-  border-radius: 1.5rem;
   color: white;
+  border-radius: 1.5rem;
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -579,6 +577,8 @@ Menus
 .menu {
   position: relative;
   top: -2rem;
+  display: flex;
+  flex-flow: row wrap;
   padding-top: 2rem;
   background-color: whitesmoke;
   border-radius: 2rem;
@@ -588,7 +588,12 @@ Menus
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding: 0 0.5rem 1.5rem;
+}
+
+.menu__section {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
