@@ -80,8 +80,14 @@ ul{
 .section-name{
   text-transform: uppercase;
   font-weight: 200;
-  font-size: 1rem;
-  border-bottom: 0.2rem $tertiary-color solid;
+  font-size: 1.2rem;
+
+  &::after{
+    content: "";
+    display: block;
+    width: 3rem;
+    border-bottom: 0.2rem $tertiary-color solid;
+  }
 }
 
 
