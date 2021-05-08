@@ -8,8 +8,14 @@
   }
 
 // media queries : ajustements mobile paysage
-@mixin mobile-large{
+@mixin mobile{
   @media screen and (min-width: map-get($breakpoint, mobile)){
+    @content;
+  }
+}
+
+@mixin mobile-large{
+  @media screen and (min-width: map-get($breakpoint, mobile-large)){
     @content;
   }
 }
