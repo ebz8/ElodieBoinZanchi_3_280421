@@ -5,13 +5,15 @@ $tertiary-color: hsl(165, 56%, 74%);
 $bg-color: hsl(0, 0%, 100%);
 
 // breakpoints
-$mobile: 544px;
+$mobile: 320px;
+$mobile-large: 544px;
 $tablet: 768px;
 $small-desk: 1012px;
 $large-desk: 1280px;
 
 $breakpoint: (
     mobile: $mobile,
+    mobile-large: $mobile-large,
     tablet: $tablet,
     small-desk: $small-desk,
     large-desk: $large-desk
