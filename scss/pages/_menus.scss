@@ -33,6 +33,10 @@ Menus
 
 .menu__section{
   width: 100%;
+
+  @include small-desk{
+    width: 33.33%;
+  }
   
   .h4{
     font: 1.1rem 'Roboto';

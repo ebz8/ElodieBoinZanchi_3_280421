@@ -733,6 +733,12 @@ Menus
   width: 100%;
 }
 
+@media screen and (min-width: 1012px) {
+  .menu__section {
+    width: 33.33%;
+  }
+}
+
 .menu__section .h4 {
   font: 1.1rem 'Roboto';
 }
