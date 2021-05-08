@@ -476,6 +476,12 @@ boutons
   border-radius: 1.5rem;
 }
 
+@media screen and (max-width: 320px) {
+  .secondary-button, .secondary-button--active {
+    font-size: 0.9rem;
+  }
+}
+
 .secondary-button .fas, .secondary-button--active .fas {
   margin-right: 1rem;
   margin-left: -1rem;

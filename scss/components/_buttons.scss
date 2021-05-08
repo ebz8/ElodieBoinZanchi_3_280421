@@ -31,6 +31,10 @@ boutons
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1.5rem;
 
+  @include mobile{
+    font-size: 0.9rem;
+  }
+
   .fas{
     margin-right: 1rem;
     margin-left: -1rem;

@@ -9,7 +9,7 @@
 
 // media queries : ajustements mobile paysage
 @mixin mobile{
-  @media screen and (min-width: map-get($breakpoint, mobile)){
+  @media screen and (max-width: map-get($breakpoint, mobile)){
     @content;
   }
 }
