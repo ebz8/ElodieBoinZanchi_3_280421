@@ -303,6 +303,7 @@ section {
 .container {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -438,7 +439,7 @@ boutons
 .secondary-button, .secondary-button--active {
   width: 98%;
   max-width: 330px;
-  margin: 1.5rem 0 0 0.5rem;
+  margin: 1.5rem 0.1rem 0 0.5rem;
   padding: 1.6rem;
   background-color: whitesmoke;
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
@@ -447,6 +448,11 @@ boutons
 @media screen and (max-width: 320px) {
   .secondary-button, .secondary-button--active {
     font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 718px) {
+  .secondary-button, .secondary-button--active {
+    margin: 1.5rem auto 0 auto;
   }
 }
 .secondary-button .fas, .secondary-button--active .fas {
@@ -463,7 +469,7 @@ boutons
 .secondary-button--active .fas {
   padding-right: 1rem;
   color: #9256dc;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .tertiary-button {
