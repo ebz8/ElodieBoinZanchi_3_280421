@@ -436,9 +436,9 @@ boutons
 }
 
 .secondary-button, .secondary-button--active {
-  width: 95%;
-  max-width: 350px;
-  margin: 1.5rem auto 0;
+  width: 98%;
+  max-width: 330px;
+  margin: 1.5rem 0 0 0.5rem;
   padding: 1.6rem;
   background-color: whitesmoke;
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
@@ -504,7 +504,7 @@ boutons
 
 .step {
   position: relative;
-  left: -2rem;
+  left: -2.2rem;
   padding: 0.3rem 0.5rem 0.1rem;
   border-radius: 100%;
   background-color: #9256dc;
