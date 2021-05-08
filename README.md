@@ -34,3 +34,15 @@
     - Contient le logo sur la page d'accueil.
     - Dans les pages menu, contient en plus un bouton de retour vers la page d'accueil.
 
+### Effets graphiques et animations
+(en CSS exclusivement)
+* boutons :
+- Couleur de fond des boutons principaux légèrement éclaircie et ombre portée plus visible au survol.
+- Bouton "j'aime" qui se remplit progressivement au clic (peut apparaître au survol sur Desk).
+
+* page d'accueil :
+- Loading spinner pendant 1 à 3 secondes quand visite de la page d'accueil, qui couvre l'intégralité de l'écran. Doit être en cohérence avec la charte graphique du site. (Pas d'utilisation de librairie.)
+
+* pages de menus :
+- Plats qui apparaissent progressivement avec un léger décalage dans le temps (soit 1 par 1, soit 1 par section de menu) au chargement de la page.
+- Bouton de coche qui apparait à droite du plat, qui coulisse sur la gauche, quand sélectionné par le visiteur (peut apparaitre au survol sur Desk). Si intitulé de plat trop long, rogné et apparition de "...".
