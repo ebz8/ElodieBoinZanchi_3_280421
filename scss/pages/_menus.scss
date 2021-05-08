@@ -21,6 +21,10 @@ Menus
   margin: auto 0;
   background-color: darken($bg-color,4%);
   border-radius: 2rem 2rem 0 0;
+
+  .tertiary-button{
+    width: 95%;
+  }
 }
 
 .menu__title{

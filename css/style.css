@@ -630,6 +630,9 @@ Menus
   background-color: whitesmoke;
   border-radius: 2rem 2rem 0 0;
 }
+.menu .tertiary-button {
+  width: 95%;
+}
 
 .menu__title {
   display: flex;

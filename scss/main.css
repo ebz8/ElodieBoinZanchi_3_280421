@@ -715,6 +715,10 @@ Menus
   border-radius: 2rem 2rem 0 0;
 }
 
+.menu .tertiary-button {
+  width: 95%;
+}
+
 .menu__title {
   display: -webkit-box;
   display: -ms-flexbox;
