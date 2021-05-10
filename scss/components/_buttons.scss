@@ -9,17 +9,34 @@ boutons
 ////////////////////////
 
 // bouton dégradé, coins arrondis
+// animation au survol : éclaircissement bg-color / aug box-shadow
 // ex: Explorer nos restaurants, Commander
 .main-button{
-  position: relative;
   z-index: 1;
+  position: relative;
   margin: 0 auto;
-  background: linear-gradient(170deg, $secondary-color, $primary-color);
   padding: 0.9rem 1.4rem;
-  border: none;
+  background: linear-gradient(170deg, $secondary-color, $primary-color);
   color: white;
+  border: none;
   border-radius: $btn-radius;
   box-shadow: $btn-shadows;
+  cursor: pointer;
+
+  &::after{
+    content: "";
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: $btn-radius;
+    transition: opacity 220ms;
+    background: linear-gradient(170deg, mix(white, $secondary-color, 10%), mix(white, $primary-color, 10%));
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
+  }
 
   &:hover{
     &::after{
@@ -27,20 +44,7 @@ boutons
     }
   }
 
-  &::after{
-    content: "";
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 250ms;
-    border-radius: $btn-radius;
-    background: linear-gradient(170deg, mix(white, $secondary-color, 10%), mix(white, $primary-color, 10%));
-    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
-  }
+
 }
 
 // bouton large, monochrome, contenant icône
@@ -133,7 +137,7 @@ boutons
   position: relative;
   left: -2.2rem;
   padding: 0.3rem 0.5rem 0.1rem;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: $primary-color;
   color: white;
   font: 0.9rem 'Roboto';
@@ -141,14 +145,42 @@ boutons
 }
 
 // button-like
-.fa-heart{
-    font-size: 1.5rem;
-    font-weight: 200;
+.like-button{
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0;
+  z-index: 3;
+  position: relative;
+  transition: all ease-in-out;
 
-    &:hover{
-      color: $secondary-color;
-    }
+  &:checked + .full{
+    opacity: 1;
+    animation: 1s; 
+  }
 }
+
+// coeur vide
+.empty{
+  z-index: 2;
+  position: absolute;
+  right: 1rem;
+  font-size: 1.6rem;
+}
+
+//coeur rempli
+.full{
+  opacity: 0;
+  position: absolute;
+  right: 1rem;  
+  font-size: 1.5rem;
+  color: $primary-color;
+  transition: opacity ease-in-out;
+}
+
+
+
+
 
 
 
