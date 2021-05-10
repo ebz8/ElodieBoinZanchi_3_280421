@@ -11,6 +11,8 @@ boutons
 // bouton dégradé, coins arrondis
 // ex: Explorer nos restaurants, Commander
 .main-button{
+  position: relative;
+  z-index: 1;
   margin: 0 auto;
   background: linear-gradient(170deg, $secondary-color, $primary-color);
   padding: 0.9rem 1.4rem;
@@ -19,11 +21,25 @@ boutons
   border-radius: 1.5rem;
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 
-  &::after{
-    content: "";
-    background: linear-gradient(170deg, mix(white, $secondary-color, 10%), mix(white, $primary-color, 10%));
+  &:hover{
+    &::after{
+      opacity: 1;
+    }
   }
 
+  &::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 250ms;
+    border-radius: 1.5rem;
+    background: linear-gradient(170deg, mix(white, $secondary-color, 10%), mix(white, $primary-color, 10%));
+  }
 }
 
 // bouton large, monochrome, contenant icône

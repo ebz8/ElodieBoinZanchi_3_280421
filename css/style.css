@@ -427,6 +427,8 @@ boutons
 -----------------------
 */
 .main-button {
+  position: relative;
+  z-index: 1;
   margin: 0 auto;
   background: linear-gradient(170deg, #ff7ad9, #9256dc);
   padding: 0.9rem 1.4rem;
@@ -435,8 +437,20 @@ boutons
   border-radius: 1.5rem;
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
+.main-button:hover::after {
+  opacity: 1;
+}
 .main-button::after {
   content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 250ms;
+  border-radius: 1.5rem;
   background: linear-gradient(170deg, #ff87dd, #9d67e0);
 }
 
