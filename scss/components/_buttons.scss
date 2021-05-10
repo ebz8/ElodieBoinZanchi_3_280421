@@ -18,8 +18,8 @@ boutons
   padding: 0.9rem 1.4rem;
   border: none;
   color: white;
-  border-radius: 1.5rem;
-  box-shadow: $main-shadows;
+  border-radius: $btn-radius;
+  box-shadow: $btn-shadows;
 
   &:hover{
     &::after{
@@ -37,7 +37,7 @@ boutons
     left: 0;
     opacity: 0;
     transition: opacity 250ms;
-    border-radius: 1.5rem;
+    border-radius: $btn-radius;
     background: linear-gradient(170deg, mix(white, $secondary-color, 10%), mix(white, $primary-color, 10%));
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
   }
@@ -51,8 +51,8 @@ boutons
   margin: 1.5rem 0.1rem 0 0.5rem;
   padding: 1.6rem;
   background-color: darken($bg-color,4%);
-  box-shadow: $main-shadows;
-  border-radius: 1.5rem;
+  box-shadow: $btn-shadows;
+  border-radius: $btn-radius;
 
   @include mobile{
     font-size: 0.9rem;
@@ -94,7 +94,7 @@ boutons
   background-color: white;
   border: none;
   border-radius: 1rem;
-  box-shadow: $main-shadows;
+  box-shadow: $btn-shadows;
 
   .price{
     align-self: flex-end;
