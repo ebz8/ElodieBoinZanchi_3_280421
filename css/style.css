@@ -541,6 +541,7 @@ boutons
 
 .like-button {
   display: flex;
+  justify-content: flex-end;
   width: 1.9rem;
   height: 1.9rem;
   opacity: 0;
