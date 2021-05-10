@@ -153,6 +153,7 @@ boutons
   z-index: 3;
   position: relative;
   transition: all ease-in-out;
+  cursor: pointer;
 
   &:checked + .full{
     opacity: 1;
@@ -165,16 +166,20 @@ boutons
   z-index: 2;
   position: absolute;
   right: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 //coeur rempli
 .full{
+  z-index: 1;
   opacity: 0;
   position: absolute;
   right: 1rem;  
   font-size: 1.5rem;
-  color: $primary-color;
+  background: $btn-gradient;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: opacity ease-in-out;
 }
 
