@@ -540,7 +540,7 @@ boutons
 }
 
 .like-button {
-  display: block;
+  display: flex;
   width: 1.9rem;
   height: 1.9rem;
   opacity: 0;
