@@ -540,19 +540,22 @@ boutons
 }
 
 .like-button {
-  display: block;
-  width: 1.9rem;
-  height: 1.9rem;
   opacity: 0;
   z-index: 3;
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
   transition: all ease-in-out;
   cursor: pointer;
+}
+.like-button:checked {
+  opacity: 0;
 }
 .like-button:checked + .fa-heart {
   opacity: 1;
   z-index: 2;
-  position: absolute;
-  right: 1.12rem;
   font-size: 1.5rem;
   font-weight: bold;
   background: linear-gradient(170deg, #ff7ad9, #9256dc);
@@ -564,8 +567,6 @@ boutons
 
 .fa-heart {
   z-index: 1;
-  position: absolute;
-  right: 1.12rem;
   font-size: 1.5rem;
   font-weight: lighter;
 }

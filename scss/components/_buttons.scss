@@ -145,20 +145,25 @@ boutons
 }
 
 // button-like
+// se colore quand checked
 .like-button{
-  display: block;
-  width: 1.9rem;
-  height: 1.9rem;
   opacity: 0;
   z-index: 3;
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
   transition: all ease-in-out;
   cursor: pointer;
 
+  &:checked{
+    opacity:0;
+  }
+
   &:checked + .fa-heart{
     opacity: 1;
-    z-index: 2;
-    position: absolute;
-    right: 1.12rem;  
+    z-index: 2; 
     font-size: 1.5rem;
     font-weight: bold;
     background: $btn-gradient;
@@ -172,8 +177,6 @@ boutons
 // coeur vide
 .fa-heart{
   z-index: 1;
-  position: absolute;
-  right: 1.12rem;
   font-size: 1.5rem;
   font-weight: lighter;
 }
