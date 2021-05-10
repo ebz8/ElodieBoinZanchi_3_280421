@@ -541,37 +541,33 @@ boutons
 
 .like-button {
   display: block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.9rem;
+  height: 1.9rem;
   opacity: 0;
   z-index: 3;
-  position: relative;
   transition: all ease-in-out;
   cursor: pointer;
 }
-.like-button:checked + .full {
+.like-button:checked + .fa-heart {
   opacity: 1;
-  animation: 1s;
-}
-
-.empty {
   z-index: 2;
   position: absolute;
-  right: 1rem;
+  right: 1.12rem;
   font-size: 1.5rem;
-}
-
-.full {
-  z-index: 1;
-  opacity: 0;
-  position: absolute;
-  right: 1rem;
-  font-size: 1.5rem;
+  font-weight: bold;
   background: linear-gradient(170deg, #ff7ad9, #9256dc);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: opacity ease-in-out;
+  transition: all ease-in-out;
+}
+
+.fa-heart {
+  z-index: 1;
+  position: absolute;
+  right: 1.12rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
 
 /**
