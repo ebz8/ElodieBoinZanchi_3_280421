@@ -18,6 +18,12 @@ boutons
   color: white;
   border-radius: 1.5rem;
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+
+  &::after{
+    content: "";
+    background: linear-gradient(170deg, mix(white, $secondary-color, 10%), mix(white, $primary-color, 10%));
+  }
+
 }
 
 // bouton large, monochrome, contenant icône

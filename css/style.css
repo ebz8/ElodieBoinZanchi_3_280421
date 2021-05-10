@@ -435,6 +435,10 @@ boutons
   border-radius: 1.5rem;
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
 }
+.main-button::after {
+  content: "";
+  background: linear-gradient(170deg, #ff87dd, #9d67e0);
+}
 
 .secondary-button, .secondary-button--active {
   width: 98%;

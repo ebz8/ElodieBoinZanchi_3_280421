@@ -466,6 +466,12 @@ boutons
   border-radius: 1.5rem;
   -webkit-box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: background 400ms;
+  transition: background 400ms;
+}
+
+.main-button:hover {
+  background-color: grey;
 }
 
 .secondary-button, .secondary-button--active {
