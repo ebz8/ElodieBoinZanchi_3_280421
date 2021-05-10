@@ -435,7 +435,7 @@ boutons
   border: none;
   color: white;
   border-radius: 1.5rem;
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
 }
 .main-button:hover::after {
   opacity: 1;
@@ -452,6 +452,7 @@ boutons
   transition: opacity 250ms;
   border-radius: 1.5rem;
   background: linear-gradient(170deg, #ff87dd, #9d67e0);
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .secondary-button, .secondary-button--active {
@@ -460,7 +461,7 @@ boutons
   margin: 1.5rem 0.1rem 0 0.5rem;
   padding: 1.6rem;
   background-color: whitesmoke;
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
   border-radius: 1.5rem;
 }
 @media screen and (max-width: 320px) {
@@ -500,7 +501,7 @@ boutons
   background-color: white;
   border: none;
   border-radius: 1rem;
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
 }
 .tertiary-button .price {
   align-self: flex-end;

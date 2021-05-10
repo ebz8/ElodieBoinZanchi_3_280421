@@ -19,7 +19,7 @@ boutons
   border: none;
   color: white;
   border-radius: 1.5rem;
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: $main-shadows;
 
   &:hover{
     &::after{
@@ -39,6 +39,7 @@ boutons
     transition: opacity 250ms;
     border-radius: 1.5rem;
     background: linear-gradient(170deg, mix(white, $secondary-color, 10%), mix(white, $primary-color, 10%));
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -50,7 +51,7 @@ boutons
   margin: 1.5rem 0.1rem 0 0.5rem;
   padding: 1.6rem;
   background-color: darken($bg-color,4%);
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: $main-shadows;
   border-radius: 1.5rem;
 
   @include mobile{
@@ -93,7 +94,7 @@ boutons
   background-color: white;
   border: none;
   border-radius: 1rem;
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: $main-shadows;
 
   .price{
     align-self: flex-end;
