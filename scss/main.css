@@ -608,8 +608,6 @@ boutons
   height: 1.9rem;
   opacity: 0;
   z-index: 3;
-  -webkit-transition: all ease-in-out;
-  transition: all ease-in-out;
   cursor: pointer;
 }
 
@@ -623,8 +621,8 @@ boutons
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: all ease-in-out;
-  transition: all ease-in-out;
+  -webkit-transition: all cubic-bezier(0.61, 0.61, 0.39, 1.39) 0.3s;
+  transition: all cubic-bezier(0.61, 0.61, 0.39, 1.39) 0.3s;
 }
 
 .fa-heart {
