@@ -598,7 +598,7 @@ boutons
 
 .like-button {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 1.8rem;
   right: 1.5rem;
 }
 
@@ -617,7 +617,7 @@ boutons
   opacity: 1;
   z-index: 2;
   right: 1.12rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   background: linear-gradient(170deg, #ff7ad9, #9256dc);
   background-clip: border-box;
@@ -630,7 +630,7 @@ boutons
 .fa-heart {
   z-index: 1;
   right: 1.12rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: lighter;
 }
 
