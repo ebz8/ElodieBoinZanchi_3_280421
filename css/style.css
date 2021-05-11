@@ -540,7 +540,13 @@ boutons
 }
 
 .like-button {
-  display: block;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+.like-button__checkbox {
+  position: absolute;
   width: 1.9rem;
   height: 1.9rem;
   opacity: 0;
@@ -548,10 +554,9 @@ boutons
   transition: all ease-in-out;
   cursor: pointer;
 }
-.like-button:checked + .fa-heart {
+.like-button__checkbox:checked + .fa-heart {
   opacity: 1;
   z-index: 2;
-  position: absolute;
   right: 1.12rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -564,7 +569,6 @@ boutons
 
 .fa-heart {
   z-index: 1;
-  position: absolute;
   right: 1.12rem;
   font-size: 1.5rem;
   font-weight: lighter;
@@ -689,6 +693,7 @@ Menus
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   width: 100%;
   padding: 0 0.5rem 1.5rem;
 }
