@@ -602,6 +602,10 @@ boutons
   right: 1.5rem;
 }
 
+.like-button input[type=checkbox] {
+  display: none;
+}
+
 .like-button__checkbox {
   position: absolute;
   width: 1.9rem;
