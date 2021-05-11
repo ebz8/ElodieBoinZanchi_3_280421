@@ -597,6 +597,7 @@ boutons
 }
 
 .like-button {
+  padding: 0.1rem;
   position: absolute;
   bottom: 1.8rem;
   right: 1.5rem;
