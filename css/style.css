@@ -439,9 +439,9 @@ boutons
   cursor: pointer;
 }
 .main-button::after {
+  z-index: -1;
   content: "";
   opacity: 0;
-  z-index: -1;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -532,20 +532,19 @@ boutons
   position: relative;
   left: -2.2rem;
   padding: 0.3rem 0.5rem 0.1rem;
-  border-radius: 50%;
   background-color: #9256dc;
   color: white;
   font: 0.9rem "Roboto";
   font-weight: 200;
+  border-radius: 50%;
 }
 
 .like-button {
   display: flex;
-  justify-content: flex-end;
-  width: 1.9rem;
-  height: 1.9rem;
   opacity: 0;
   z-index: 3;
+  width: 1.9rem;
+  height: 1.9rem;
   transition: all ease-in-out;
   cursor: pointer;
 }
@@ -655,6 +654,14 @@ accueil
 Menus
 ----------------------
 */
+.menu .h4 {
+  font: 1.1rem;
+}
+.menu .h5 {
+  font: 0.9rem;
+  font-weight: 200;
+}
+
 .vignette {
   width: 100%;
   max-height: 35vh;
@@ -693,13 +700,6 @@ Menus
   .menu__section {
     width: 33.33%;
   }
-}
-.menu__section .h4 {
-  font: 1.1rem "Roboto";
-}
-.menu__section .h5 {
-  font: 0.9rem "Roboto";
-  font-weight: 200;
 }
 @media screen and (min-width: 544px) {
   .menu__section {

@@ -24,9 +24,9 @@ boutons
   cursor: pointer;
 
   &::after{
+    z-index: -1;
     content: "";
     opacity: 0;
-    z-index: -1;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -43,8 +43,6 @@ boutons
       opacity: 1;
     }
   }
-
-
 }
 
 // bouton large, monochrome, contenant icône
@@ -74,7 +72,8 @@ boutons
     font-size: 1.1rem;
   }
 }
-// version active: icone et fonds colorés
+
+// version active: icone et fond colorés
 .secondary-button--active{
   @extend .secondary-button;
   background-color: lighten($primary-color, 37%);
@@ -137,21 +136,20 @@ boutons
   position: relative;
   left: -2.2rem;
   padding: 0.3rem 0.5rem 0.1rem;
-  border-radius: 50%;
   background-color: $primary-color;
   color: white;
   font: 0.9rem 'Roboto';
   font-weight: 200;
+  border-radius: 50%;
 }
 
 // button-like
 .like-button{
   display: flex;
-  justify-content: flex-end;
-  width: 1.9rem;
-  height: 1.9rem;
   opacity: 0;
   z-index: 3;
+  width: 1.9rem;
+  height: 1.9rem;
   transition: all ease-in-out;
   cursor: pointer;
 
