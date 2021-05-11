@@ -7,7 +7,9 @@
     width: 100vw;
   }
 
-// media queries : ajustements mobile paysage
+// Gestion du responsive
+// (media queries : mobile / mobile large
+// tablette / desk / large desk)
 @mixin mobile{
   @media screen and (max-width: map-get($breakpoint, mobile)){
     @content;

@@ -548,18 +548,13 @@ boutons
 .like-button input[type=checkbox] {
   display: none;
 }
-
-.like-button__checkbox {
-  position: absolute;
-  width: 1.9rem;
-  height: 1.9rem;
-  opacity: 0;
-  z-index: 3;
-  cursor: pointer;
+.like-button .fa-heart {
+  right: 1.12rem;
+  font-size: 1.4rem;
+  font-weight: lighter;
 }
+
 .like-button__checkbox:checked + .fa-heart {
-  opacity: 1;
-  z-index: 2;
   right: 1.12rem;
   font-size: 1.4rem;
   font-weight: bold;
@@ -567,14 +562,7 @@ boutons
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all cubic-bezier(0.61, 0.61, 0.39, 1.39) 0.3s;
-}
-
-.fa-heart {
-  z-index: 1;
-  right: 1.12rem;
-  font-size: 1.4rem;
-  font-weight: lighter;
+  transition: all cubic-bezier(0.61, 0.61, 0.39, 1.39) 0.2s;
 }
 
 /**
