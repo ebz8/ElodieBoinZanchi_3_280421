@@ -50,9 +50,19 @@ accueil
 //
 // mode d'emploi
 //
+.demo{
+  .secondary-button{
+    margin: 1.5rem 0.1rem 0 0.5rem;
 
-
-
+    @include mobile{
+      font-size: 0.9rem;
+    }
+  
+    @include tablet{
+      margin: 1.5rem auto 0 auto;
+    }
+  }
+}
 
 //
 // restaurants
@@ -86,11 +96,19 @@ accueil
       margin: 1%;
     }
   }
+
+  .like-button{
+    position: absolute;
+    bottom: 1.8rem;
+    right: 1.5rem;
+  }
 }
 
 .card--legend__container{
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+
+  
 }
 

@@ -435,6 +435,7 @@ boutons
 -----------------------
 */
 .main-button {
+  cursor: pointer;
   z-index: 1;
   position: relative;
   margin: 0 auto;
@@ -444,7 +445,6 @@ boutons
   border: none;
   border-radius: 1.5rem;
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
 }
 .main-button::after {
   content: "";
@@ -467,21 +467,10 @@ boutons
 .secondary-button, .secondary-button--active {
   width: 98%;
   max-width: 330px;
-  margin: 1.5rem 0.1rem 0 0.5rem;
   padding: 1.6rem;
   background-color: whitesmoke;
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
   border-radius: 1.5rem;
-}
-@media screen and (max-width: 320px) {
-  .secondary-button, .secondary-button--active {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (min-width: 718px) {
-  .secondary-button, .secondary-button--active {
-    margin: 1.5rem auto 0 auto;
-  }
 }
 .secondary-button .fas, .secondary-button--active .fas {
   margin-right: 1rem;
@@ -525,6 +514,17 @@ boutons
   background-color: #98e2cf;
 }
 
+.step {
+  position: relative;
+  left: -2.2rem;
+  padding: 0.2rem 0.5rem 0.1rem;
+  background-color: #9256dc;
+  color: white;
+  font: 0.9rem "Roboto";
+  font-weight: 200;
+  border-radius: 50%;
+}
+
 .new-button {
   position: absolute;
   top: 0.8rem;
@@ -536,23 +536,6 @@ boutons
   border-radius: 0.2rem;
 }
 
-.step {
-  position: relative;
-  left: -2.2rem;
-  padding: 0.3rem 0.5rem 0.1rem;
-  background-color: #9256dc;
-  color: white;
-  font: 0.9rem "Roboto";
-  font-weight: 200;
-  border-radius: 50%;
-}
-
-.like-button {
-  padding: 0.1rem;
-  position: absolute;
-  bottom: 1.8rem;
-  right: 1.5rem;
-}
 .like-button .fa-heart {
   right: 1.12rem;
   font-size: 1.4rem;
@@ -570,7 +553,7 @@ boutons
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fade-in cubic-bezier(0.24, 0.49, 0.33, 1.19) 2s;
+  animation: fade-in cubic-bezier(0.24, 0.49, 0.33, 1.19) 1.5s;
 }
 
 /**
@@ -617,6 +600,20 @@ accueil
   margin-top: 1rem;
 }
 
+.demo .secondary-button, .demo .secondary-button--active {
+  margin: 1.5rem 0.1rem 0 0.5rem;
+}
+@media screen and (max-width: 320px) {
+  .demo .secondary-button, .demo .secondary-button--active {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 718px) {
+  .demo .secondary-button, .demo .secondary-button--active {
+    margin: 1.5rem auto 0 auto;
+  }
+}
+
 .restaurants {
   background-color: #f7f7f7;
   padding-bottom: 5rem;
@@ -644,6 +641,11 @@ accueil
     width: 48%;
     margin: 1%;
   }
+}
+.restaurants .like-button {
+  position: absolute;
+  bottom: 1.8rem;
+  right: 1.5rem;
 }
 
 .card--legend__container {

@@ -12,6 +12,7 @@ boutons
 // (dégradé, coins arrondis)
 // ex: Explorer nos restaurants, Commander
 .main-button{
+  cursor: pointer;
   z-index: 1;
   position: relative;
   margin: 0 auto;
@@ -21,7 +22,6 @@ boutons
   border: none;
   border-radius: $btn-radius;
   box-shadow: $btn-shadows;
-  cursor: pointer;
 
   // animation au survol : éclaircissement bg-color / aug box-shadow
   &::after{
@@ -51,19 +51,10 @@ boutons
 .secondary-button{
   width: 98%;
   max-width: 330px;
-  margin: 1.5rem 0.1rem 0 0.5rem;
   padding: 1.6rem;
   background-color: darken($bg-color,4%);
   box-shadow: $btn-shadows;
   border-radius: $btn-radius;
-
-  @include mobile{
-    font-size: 0.9rem;
-  }
-
-  @include tablet{
-    margin: 1.5rem auto 0 auto;
-  }
 
   .fas{
     margin-right: 1rem;
@@ -73,12 +64,11 @@ boutons
     font-size: 1.1rem;
   }
 }
-
 // version active: icone et fond colorés
 .secondary-button--active{
   @extend .secondary-button;
   background-color: lighten($primary-color, 37%);
-  
+
   .fas{
     padding-right: 1rem;
     color: $primary-color;
@@ -120,6 +110,18 @@ boutons
 //boutons secondaires///
 ////////////////////////
 
+// numérotation d'étapes
+.step{
+  position: relative;
+  left: -2.2rem;
+  padding: 0.2rem 0.5rem 0.1rem;
+  background-color: $primary-color;
+  color: white;
+  font: 0.9rem 'Roboto';
+  font-weight: 200;
+  border-radius: 50%;
+}
+
 // bouton "Nouveau"
 .new-button{
   position: absolute;
@@ -132,33 +134,16 @@ boutons
   border-radius: 0.2rem;
 }
 
-// numérotation d'étapes
-.step{
-  position: relative;
-  left: -2.2rem;
-  padding: 0.3rem 0.5rem 0.1rem;
-  background-color: $primary-color;
-  color: white;
-  font: 0.9rem 'Roboto';
-  font-weight: 200;
-  border-radius: 50%;
-}
-
 // Bouton "j'aime"
 // se remplit quand hover ou checked
 .like-button{
-  padding: 0.1rem;
-  position: absolute;
-  bottom: 1.8rem;
-  right: 1.5rem;
-
   // icône stade A
   .fa-heart{
       right: 1.12rem;
       font-size: 1.4rem;
       font-weight: lighter;
     }
-
+  // disparition du bouton input
   input[type=checkbox]{
     display:none;
     
@@ -173,7 +158,7 @@ boutons
       background-clip: border-box;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: fade-in cubic-bezier(.24,.49,.33,1.19) 2s;
+      animation: fade-in cubic-bezier(.24,.49,.33,1.19) 1.5s;
     }
   } 
 }
