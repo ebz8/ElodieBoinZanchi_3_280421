@@ -5,7 +5,7 @@
     opacity: 0.1;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
@@ -556,7 +556,7 @@ boutons
   -webkit-text-fill-color: transparent;
   text-rendering: geometricPrecision;
   overflow: hidden;
-  animation: fade-in cubic-bezier(0.24, 0.49, 0.33, 1.19) backwards 0.3s;
+  animation: fade-in ease-out backwards 0.3s;
 }
 
 /**

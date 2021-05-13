@@ -158,7 +158,7 @@ boutons
       -webkit-text-fill-color: transparent;
       text-rendering: geometricPrecision;
       overflow: hidden;
-      animation: fade-in cubic-bezier(.24,.49,.33,1.19) backwards 0.3s;
+      animation: fade-in ease-out backwards 0.3s;
     }
   } 
 }
