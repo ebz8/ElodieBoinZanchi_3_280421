@@ -177,8 +177,7 @@ boutons
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     cursor: pointer;
-    animation: fade-in 1s;
-
+    animation: fade-in cubic-bezier(.24,.49,.33,1.19) 2s;
   }
 }
 
