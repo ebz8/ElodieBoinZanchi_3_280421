@@ -150,14 +150,15 @@ boutons
     // icône avec animation vers stade B
     &:checked + .fa-heart,
     &:hover + .fa-heart{
+      margin-bottom: -3px;
       cursor: pointer;
       font-weight: bolder;
-      background: $btn-gradient;
-      background-clip: border-box;
+      background-image: $btn-gradient;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      text-rendering: geometricPrecision;
       overflow: hidden;
-      animation: fade-in cubic-bezier(.24,.49,.33,1.19) backwards 0.35s;
+      animation: fade-in cubic-bezier(.24,.49,.33,1.19) backwards 0.3s;
     }
   } 
 }

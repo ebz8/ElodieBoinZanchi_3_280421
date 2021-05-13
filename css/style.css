@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;500;700;900&display=swap");
 @keyframes fade-in {
-  from {
+  0% {
     opacity: 0.1;
-    transform: scale(0.7);
   }
-  to {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
     opacity: 1;
-    transform: scale(0.97);
   }
 }
 /**
@@ -547,14 +548,15 @@ boutons
   display: none;
 }
 .like-button input[type=checkbox]:checked + .fa-heart, .like-button input[type=checkbox]:hover + .fa-heart {
+  margin-bottom: -3px;
   cursor: pointer;
   font-weight: bolder;
-  background: linear-gradient(170deg, #ff7ad9, #9256dc);
-  background-clip: border-box;
+  background-image: linear-gradient(170deg, #ff7ad9, #9256dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-rendering: geometricPrecision;
   overflow: hidden;
-  animation: fade-in cubic-bezier(0.24, 0.49, 0.33, 1.19) backwards 0.35s;
+  animation: fade-in cubic-bezier(0.24, 0.49, 0.33, 1.19) backwards 0.3s;
 }
 
 /**
