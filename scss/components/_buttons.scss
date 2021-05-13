@@ -159,24 +159,20 @@ boutons
     right: 1.12rem;
     font-size: 1.4rem;
     font-weight: lighter;
-    background: white;
-
   }
 }
-
-// checkbox label
+// label du checkbox like-button
 .like-button__checkbox{
-
   &:checked + .fa-heart,
   &:hover + .fa-heart{
+    cursor: pointer;
     right: 1.12rem;  
     font-size: 1.4rem;
+    font-weight: bold;
     background: $btn-gradient;
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    cursor: pointer;
     animation: fade-in cubic-bezier(.24,.49,.33,1.19) 2s;
   }
 }
