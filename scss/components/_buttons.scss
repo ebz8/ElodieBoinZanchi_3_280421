@@ -158,7 +158,8 @@ boutons
       background-clip: border-box;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: fade-in cubic-bezier(.24,.49,.33,1.19) 1.5s;
+      overflow: hidden;
+      animation: fade-in cubic-bezier(.24,.49,.33,1.19) .4s;
     }
   } 
 }
