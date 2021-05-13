@@ -447,8 +447,8 @@ boutons
   cursor: pointer;
 }
 .main-button::after {
-  z-index: -1;
   content: "";
+  z-index: -1;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -456,9 +456,9 @@ boutons
   left: 0;
   right: 0;
   border-radius: 1.5rem;
-  transition: opacity 220ms;
   background: linear-gradient(170deg, #ff87dd, #9d67e0);
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
+  transition: opacity 220ms;
 }
 .main-button:hover::after {
   opacity: 1;
@@ -553,16 +553,15 @@ boutons
   bottom: 1.8rem;
   right: 1.5rem;
 }
-.like-button input[type=checkbox] {
-  display: none;
-}
 .like-button .fa-heart {
   right: 1.12rem;
   font-size: 1.4rem;
   font-weight: lighter;
 }
-
-.like-button__checkbox:checked + .fa-heart, .like-button__checkbox:hover + .fa-heart {
+.like-button input[type=checkbox] {
+  display: none;
+}
+.like-button input[type=checkbox]:checked + .fa-heart, .like-button input[type=checkbox]:hover + .fa-heart {
   cursor: pointer;
   right: 1.12rem;
   font-size: 1.4rem;
