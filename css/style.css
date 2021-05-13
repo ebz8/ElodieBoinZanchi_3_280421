@@ -544,6 +544,7 @@ boutons
   position: absolute;
   bottom: 1.8rem;
   right: 1.5rem;
+  cursor: pointer;
 }
 .like-button input[type=checkbox] {
   display: none;
@@ -563,6 +564,7 @@ boutons
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all cubic-bezier(0.61, 0.61, 0.39, 1.39);
+  cursor: pointer;
 }
 
 /**

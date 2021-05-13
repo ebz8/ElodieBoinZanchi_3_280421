@@ -150,6 +150,7 @@ boutons
   position: absolute;
   bottom: 1.8rem;
   right: 1.5rem;
+  cursor: pointer;
 
   input[type=checkbox]{
     display:none;
@@ -172,6 +173,7 @@ boutons
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all cubic-bezier(.61,.61,.39,1.39);
+    cursor: pointer;
   }
 }
 
