@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;500;700;900&display=swap");
+@keyframes fade-in {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /**
 -----------------------
 modern-normalize v1.0.0
@@ -12,8 +22,6 @@ Document
 /**
 Use a better box model (opinionated).
 */
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;500;700;900&display=swap");
 *,
 *::before,
 *::after {
@@ -552,18 +560,19 @@ boutons
   right: 1.12rem;
   font-size: 1.4rem;
   font-weight: lighter;
+  background: white;
 }
 
 .like-button__checkbox:checked + .fa-heart, .like-button__checkbox:hover + .fa-heart {
   right: 1.12rem;
   font-size: 1.4rem;
-  font-weight: bold;
   background: linear-gradient(170deg, #ff7ad9, #9256dc);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all cubic-bezier(0.61, 0.61, 0.39, 1.39);
+  font-weight: bold;
   cursor: pointer;
+  animation: fade-in 1s;
 }
 
 /**
