@@ -154,6 +154,7 @@ boutons
       cursor: pointer;
       font-weight: bolder;
       background-image: $btn-gradient;
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-rendering: geometricPrecision;

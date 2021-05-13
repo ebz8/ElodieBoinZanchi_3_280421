@@ -552,6 +552,7 @@ boutons
   cursor: pointer;
   font-weight: bolder;
   background-image: linear-gradient(170deg, #ff7ad9, #9256dc);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-rendering: geometricPrecision;
