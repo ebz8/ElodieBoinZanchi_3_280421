@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;500;700;900&display=swap");
 @keyframes fade-in {
-  0% {
-    opacity: 0.3;
-    transform: scaleX(0%);
+  from {
+    opacity: 0.1;
+    transform: scale(0.7);
   }
-  100% {
+  to {
     opacity: 1;
-    transform: scaleX(100%);
+    transform: scale(0.97);
   }
 }
 /**
@@ -446,7 +446,7 @@ boutons
   color: white;
   border: none;
   border-radius: 1.5rem;
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 3px 9px 0px rgba(190, 190, 190, 0.801);
 }
 .main-button::after {
   content: "";
@@ -471,7 +471,7 @@ boutons
   max-width: 330px;
   padding: 1.6rem;
   background-color: whitesmoke;
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 3px 9px 0px rgba(190, 190, 190, 0.801);
   border-radius: 1.5rem;
 }
 .secondary-button .fas, .secondary-button--active .fas {
@@ -501,7 +501,7 @@ boutons
   background-color: white;
   border: none;
   border-radius: 1rem;
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 3px 9px 0px rgba(190, 190, 190, 0.801);
 }
 .tertiary-button .price {
   align-self: flex-end;
@@ -548,15 +548,13 @@ boutons
 }
 .like-button input[type=checkbox]:checked + .fa-heart, .like-button input[type=checkbox]:hover + .fa-heart {
   cursor: pointer;
-  right: 1.12rem;
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: bolder;
   background: linear-gradient(170deg, #ff7ad9, #9256dc);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   overflow: hidden;
-  animation: fade-in cubic-bezier(0.24, 0.49, 0.33, 1.19) 0.4s;
+  animation: fade-in cubic-bezier(0.24, 0.49, 0.33, 1.19) backwards 0.35s;
 }
 
 /**

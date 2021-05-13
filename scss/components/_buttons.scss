@@ -151,15 +151,13 @@ boutons
     &:checked + .fa-heart,
     &:hover + .fa-heart{
       cursor: pointer;
-      right: 1.12rem;  
-      font-size: 1.4rem;
-      font-weight: bold;
+      font-weight: bolder;
       background: $btn-gradient;
       background-clip: border-box;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       overflow: hidden;
-      animation: fade-in cubic-bezier(.24,.49,.33,1.19) .4s;
+      animation: fade-in cubic-bezier(.24,.49,.33,1.19) backwards 0.35s;
     }
   } 
 }
