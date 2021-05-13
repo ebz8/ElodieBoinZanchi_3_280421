@@ -163,7 +163,7 @@ boutons
 }
 
 .like-button__checkbox{
-  &:checked + .fa-heart{
+  &:checked + .fa-heart, &:hover + .fa-heart{
     right: 1.12rem;  
     font-size: 1.4rem;
     font-weight: bold;
@@ -171,7 +171,7 @@ boutons
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: all cubic-bezier(.61,.61,.39,1.39) .2s;
+    transition: all cubic-bezier(.61,.61,.39,1.39);
   }
 }
 
