@@ -294,6 +294,8 @@ bases
 ----------------------
 */
 body {
+  width: 100vw;
+  max-width: 1440px;
   margin: 0 auto;
   font-family: "Roboto";
   font-size: 1rem;
@@ -307,7 +309,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   flex-flow: column wrap;
 }
 
@@ -392,10 +394,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
+  position: relative;
   width: 100%;
   padding: 0.8rem 0.3rem 0.3rem;
-  box-shadow: 0 0 10px 0 rgba(56, 56, 56, 0.6);
+  box-shadow: 0 4px 0 0 rgba(190, 190, 190, 0.3);
 }
 header a {
   position: absolute;
@@ -569,7 +572,7 @@ accueil
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   background-color: #e8e8e8;
   margin-top: 0.3rem;
   padding: 0.7rem 0;
@@ -589,7 +592,7 @@ accueil
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   flex-flow: column wrap;
   text-align: center;
   background-color: #f7f7f7;
