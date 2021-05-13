@@ -5,6 +5,7 @@ bases
 */
 
 body{
+  max-width: 1440px;
   margin: 0 auto;
   width: 100vw;
   font-family: 'Roboto';
@@ -17,7 +18,7 @@ section{
 }
 
 .page-container{
-  @include flexcenter;
+  
   flex-flow: column wrap;
 }
 
