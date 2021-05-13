@@ -150,7 +150,6 @@ boutons
   position: absolute;
   bottom: 1.8rem;
   right: 1.5rem;
-  cursor: pointer;
 
   input[type=checkbox]{
     display:none;
@@ -160,7 +159,7 @@ boutons
     right: 1.12rem;
     font-size: 1.4rem;
     font-weight: lighter;
-}
+  }
 }
 
 .like-button__checkbox{
