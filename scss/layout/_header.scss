@@ -8,9 +8,13 @@ header
 {
   @include flexcenter;
   position: relative;
-  width: 100%;
   padding: 0.8rem 0.3rem 0.3rem;
   box-shadow: 0 4px 0 0 rgba(190, 190, 190, 0.3);
+
+  @include large-desk{
+    box-shadow: 0 0 0 0 rgba(190, 190, 190, 0.3);
+
+  }
 
   a{
     position: absolute;
