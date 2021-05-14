@@ -502,7 +502,20 @@ boutons
   box-shadow: 2px 3px 9px 0px rgba(190, 190, 190, 0.801);
   animation: fade-in ease-in-out backwards 0.4s;
 }
-.tertiary-button .price {
+.tertiary-button .__text {
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tertiary-button .__text p:first-child {
+  font: 1.1rem;
+}
+.tertiary-button .__text p:last-child {
+  font: 0.7rem;
+  font-weight: 200;
+}
+.tertiary-button .__price {
   align-self: flex-end;
 }
 .tertiary-button .fa-check-circle {
@@ -560,12 +573,6 @@ boutons
 
 .tertiary-button:nth-child(8) {
   animation-delay: 2.4s;
-}
-
-.tertiary-button__text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .step {
@@ -713,14 +720,6 @@ accueil
 Menus
 ----------------------
 */
-.menu .h4 {
-  font: 1.1rem;
-}
-.menu .h5 {
-  font: 0.9rem;
-  font-weight: 200;
-}
-
 .vignette {
   width: 100%;
   max-height: 35vh;

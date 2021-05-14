@@ -95,7 +95,23 @@ boutons
   box-shadow: $btn-shadows;
   animation: fade-in ease-in-out backwards .4s;
 
-  .price{
+  // textes en dépassement > "..."
+  .__text{
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    & p:first-child{
+      font: 1.1rem;
+    } 
+    & p:last-child{
+      font: 0.7rem;
+      font-weight: 200;
+    }  
+  }
+
+  .__price{
     align-self: flex-end;
   }
 
@@ -129,6 +145,7 @@ boutons
     }
   }
 }
+
 // apparition progressive
 @for $i from 1 to 9{
   .tertiary-button{
@@ -136,12 +153,6 @@ boutons
       animation-delay: $i * (.3s);
     }
   }
-}
-
-.tertiary-button__text{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 ////////////////////////
