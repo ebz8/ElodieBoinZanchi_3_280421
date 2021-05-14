@@ -305,10 +305,6 @@ section {
   padding: 3rem 1.2rem 3.5rem;
 }
 
-.page-container {
-  flex-flow: column wrap;
-}
-
 .container {
   display: flex;
   flex-flow: row wrap;
@@ -506,6 +502,7 @@ boutons
   border: none;
   border-radius: 1rem;
   box-shadow: 2px 3px 9px 0px rgba(190, 190, 190, 0.801);
+  animation: fade-in ease-in-out backwards 0.4s;
 }
 .tertiary-button .price {
   align-self: flex-end;
@@ -518,6 +515,38 @@ boutons
   flex-flow: row nowrap;
   align-items: center;
   background-color: #98e2cf;
+}
+
+.tertiary-button:nth-of-type(1) {
+  animation-delay: 0.25s;
+}
+
+.tertiary-button:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+
+.tertiary-button:nth-of-type(3) {
+  animation-delay: 0.75s;
+}
+
+.tertiary-button:nth-of-type(4) {
+  animation-delay: 1s;
+}
+
+.tertiary-button:nth-of-type(5) {
+  animation-delay: 1.25s;
+}
+
+.tertiary-button:nth-of-type(6) {
+  animation-delay: 1.5s;
+}
+
+.tertiary-button:nth-of-type(7) {
+  animation-delay: 1.75s;
+}
+
+.tertiary-button:nth-of-type(8) {
+  animation-delay: 2s;
 }
 
 .step {

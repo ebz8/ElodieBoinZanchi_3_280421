@@ -89,6 +89,7 @@ boutons
   border: none;
   border-radius: 1rem;
   box-shadow: $btn-shadows;
+  animation: fade-in ease-in-out backwards 0.4s;
 
   .price{
     align-self: flex-end;
@@ -103,6 +104,14 @@ boutons
     flex-flow: row nowrap;
     align-items: center;
     background-color: $tertiary-color;
+  }
+}
+// déclenchement progressif de l'animation
+@for $i from 1 to 9{
+  .tertiary-button{
+    &:nth-of-type(#{$i}){
+      animation-delay: $i * (.25s);
+    }
   }
 }
 
