@@ -8,6 +8,7 @@ boutons
 ///boutons principaux///
 ////////////////////////
 
+
 // Bouton principal
 // (dégradé, coins arrondis)
 // ex: Explorer nos restaurants, Commander
@@ -46,6 +47,7 @@ boutons
   }
 }
 
+
 // Bouton large, monochrome, contenant icône
 // ex : Choisissez un restaurant, Composez votre menu
 .secondary-button{
@@ -76,6 +78,7 @@ boutons
   }
 }
 
+
 // Bouton large, blanc, effet checked
 // ex: lignes de menus
 .tertiary-button{
@@ -96,12 +99,12 @@ boutons
     align-self: flex-end;
   }
 
+  // Animation checkbox
   .fa-check-circle{
     display: none;
   }
-
-  &:hover{
   
+  &:hover{
     .fa-check-circle{
       z-index: 2;
       display: flex;
@@ -126,7 +129,7 @@ boutons
     }
   }
 }
-// déclenchement progressif de l'animation
+// apparition progressive
 @for $i from 1 to 9{
   .tertiary-button{
     &:nth-child(#{$i}){
@@ -135,9 +138,16 @@ boutons
   }
 }
 
+.tertiary-button__text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 ////////////////////////
 //boutons secondaires///
 ////////////////////////
+
 
 // numérotation d'étapes
 .step{
@@ -151,6 +161,7 @@ boutons
   border-radius: 50%;
 }
 
+
 // bouton "Nouveau"
 .new-button{
   position: absolute;
@@ -162,6 +173,7 @@ boutons
   font: 0.8rem 'Roboto';
   border-radius: 0.2rem;
 }
+
 
 // Bouton "j'aime"
 // se remplit quand hover ou checked

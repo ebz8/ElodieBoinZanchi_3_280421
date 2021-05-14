@@ -562,6 +562,12 @@ boutons
   animation-delay: 2.4s;
 }
 
+.tertiary-button__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .step {
   position: relative;
   left: -2.2rem;
