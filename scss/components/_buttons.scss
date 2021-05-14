@@ -80,6 +80,7 @@ boutons
 // ex: lignes de menus
 .tertiary-button{
   display: flex;
+  position: relative;
   justify-content: space-between;
   width: 100%;
   padding: 0.8rem;
@@ -95,15 +96,34 @@ boutons
     align-self: flex-end;
   }
 
-  .fas{
+  .fa-check-circle{
     display: none;
   }
 
-  &:hover .fas{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    background-color: $tertiary-color;
+  &:hover{
+  
+    .fa-check-circle{
+      z-index: 2;
+      display: flex;
+      position: relative;
+      right: 0;
+      color: black;
+    }
+
+    &::before{
+      z-index: 1;
+      content: "";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 4rem;
+      border-radius: 0 1rem 1rem 0;
+      background-color: $tertiary-color;  
+    }
   }
 }
 // déclenchement progressif de l'animation
