@@ -10,7 +10,6 @@ accueil
 .localisation{
   @include flexcenter;
   background-color: darken($bg-color,9%);
-  margin-top: 0.3rem;
   padding: 0.7rem 0;
 
     input{

@@ -89,7 +89,7 @@ boutons
   border: none;
   border-radius: 1rem;
   box-shadow: $btn-shadows;
-  animation: fade-in ease-in-out backwards 0.4s;
+  animation: fade-in ease-in-out backwards .4s;
 
   .price{
     align-self: flex-end;
@@ -109,8 +109,8 @@ boutons
 // déclenchement progressif de l'animation
 @for $i from 1 to 9{
   .tertiary-button{
-    &:nth-of-type(#{$i}){
-      animation-delay: $i * (.25s);
+    &:nth-child(#{$i}){
+      animation-delay: $i * (.3s);
     }
   }
 }
@@ -168,7 +168,7 @@ boutons
       -webkit-text-fill-color: transparent;
       text-rendering: geometricPrecision;
       overflow: hidden;
-      animation: fade-in ease-out backwards 0.3s;
+      animation: fade-in ease-out backwards 0.6s;
     }
   } 
 }

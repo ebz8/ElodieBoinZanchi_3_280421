@@ -1,7 +1,6 @@
 @import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
-@import 'abstracts/animations';
 
 // éléments généraux //
 @import 'base/normalize';
@@ -11,6 +10,7 @@
 @import 'layout/header';
 @import 'layout/footer';
 
+@import 'components/animations';
 @import 'components/buttons';
 
 @import 'pages/index';

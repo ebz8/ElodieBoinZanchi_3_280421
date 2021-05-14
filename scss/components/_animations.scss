@@ -1,13 +1,9 @@
 // Effet d'apparition progressive
 @keyframes fade-in {
-    0% {
-        opacity: 0.1;
+    from {
+        opacity: 0.09;
     }
-
-    50%{
-        opacity: 0.3;
-    }
-    100% {
+    to {
         opacity: 1;
     }
 }
