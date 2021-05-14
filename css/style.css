@@ -492,6 +492,7 @@ boutons
   display: flex;
   position: relative;
   justify-content: space-between;
+  overflow: hidden;
   width: 100%;
   padding: 0.8rem;
   margin: 1rem auto;
@@ -501,6 +502,35 @@ boutons
   border-radius: 1rem;
   box-shadow: 2px 3px 9px 0px rgba(190, 190, 190, 0.801);
   animation: fade-in ease-in-out backwards 0.4s;
+}
+.tertiary-button::after {
+  z-index: 1;
+  content: "";
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 15%;
+  border-radius: 0 1rem 1rem 0;
+  background-color: #98e2cf;
+  transform: translate(100%);
+  transition: transform ease-in-out 0.25s;
+}
+.tertiary-button .fa-check-circle {
+  display: flex;
+  color: white;
+  transform: translate(200%);
+  transition: transform 0.35s ease-in-out;
+}
+.tertiary-button:hover::after {
+  transform: translate(0);
+}
+.tertiary-button:hover .fa-check-circle {
+  transform: translate(0);
+  z-index: 2;
 }
 .tertiary-button .__text {
   width: 80%;
@@ -517,30 +547,6 @@ boutons
 }
 .tertiary-button .__price {
   align-self: flex-end;
-}
-.tertiary-button .fa-check-circle {
-  display: none;
-}
-.tertiary-button:hover .fa-check-circle {
-  z-index: 2;
-  display: flex;
-  position: relative;
-  right: 0;
-  color: black;
-}
-.tertiary-button:hover::before {
-  z-index: 1;
-  content: "";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 4rem;
-  border-radius: 0 1rem 1rem 0;
-  background-color: #98e2cf;
 }
 
 .tertiary-button:nth-child(1) {

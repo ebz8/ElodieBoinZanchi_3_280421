@@ -85,6 +85,7 @@ boutons
   display: flex;
   position: relative;
   justify-content: space-between;
+  overflow: hidden;
   width: 100%;
   padding: 0.8rem;
   margin: 1rem auto;
@@ -93,7 +94,45 @@ boutons
   border: none;
   border-radius: 1rem;
   box-shadow: $btn-shadows;
+  // animation au chargement de la page
   animation: fade-in ease-in-out backwards .4s;
+
+  // Animation checkbox
+  
+    &::after{
+      z-index: 1;
+      content: "";
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 15%;
+      border-radius: 0 1rem 1rem 0;
+      background-color: $tertiary-color;
+      // apparition depuis la droite
+      transform: translate(100%);
+      transition: transform ease-in-out .25s;
+    }
+
+    .fa-check-circle{
+      display: flex;
+      color: white;
+      transform: translate(200%);
+      transition: transform .35s ease-in-out;
+      }
+
+    &:hover{
+      &::after{
+        transform: translate(0);
+      }
+      .fa-check-circle{
+        transform: translate(0);
+        z-index: 2;
+      }
+  }
 
   // textes en dépassement > "..."
   .__text{
@@ -113,36 +152,6 @@ boutons
 
   .__price{
     align-self: flex-end;
-  }
-
-  // Animation checkbox
-  .fa-check-circle{
-    display: none;
-  }
-  
-  &:hover{
-    .fa-check-circle{
-      z-index: 2;
-      display: flex;
-      position: relative;
-      right: 0;
-      color: black;
-    }
-
-    &::before{
-      z-index: 1;
-      content: "";
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      width: 4rem;
-      border-radius: 0 1rem 1rem 0;
-      background-color: $tertiary-color;  
-    }
   }
 }
 
