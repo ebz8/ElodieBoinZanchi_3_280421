@@ -89,13 +89,13 @@ boutons
   overflow: hidden;
   width: 100%;
   padding: 0.8rem;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   text-align: left;
   background-color: white;
   border: none;
   border-radius: 1rem;
   box-shadow: $btn-shadows;
-  // animation au chargement de la page
+  // apparition en fondu au chargement de la page
   animation: fade-in ease-in-out backwards .4s;
 
   // textes
@@ -127,10 +127,11 @@ boutons
     align-self: flex-end;
 
   // Animation checkbox
+  // Fond du bouton : tertiary color
     &::after{
       z-index: 1;
       content: "";
-      display: inline-block;
+      display: flex;
       justify-content: center;
       align-items: center;
       position: absolute;
@@ -141,18 +142,19 @@ boutons
       height: 4.5rem;
       border-radius: 0 1rem 1rem 0;
       background-color: $tertiary-color;
+
       // apparition depuis la droite
       transform: translate(120%);
       transition: transform ease-in .4s;
     } 
   }
     .__validation{
-      display: flex;
+      display: none;
       justify-content: center;
-      width: 4.2rem;
       height: 100%;
-      margin: 0.4rem -10vw 0 1.5rem;
-      transform: translate(2rem);
+      background-color: blueviolet;
+      // margin: 0.4rem -10vw 0 1.5rem;
+      transform: translate(5rem);
       transition: all .5s ease-in-out .01s;
     
       .fa-check-circle{

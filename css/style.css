@@ -495,7 +495,7 @@ boutons
   overflow: hidden;
   width: 100%;
   padding: 0.8rem;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   text-align: left;
   background-color: white;
   border: none;
@@ -529,7 +529,7 @@ boutons
 .tertiary-button .__price::after {
   z-index: 1;
   content: "";
-  display: inline-block;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -544,12 +544,11 @@ boutons
   transition: transform ease-in 0.4s;
 }
 .tertiary-button .__validation {
-  display: flex;
+  display: none;
   justify-content: center;
-  width: 4.2rem;
   height: 100%;
-  margin: 0.4rem -10vw 0 1.5rem;
-  transform: translate(2rem);
+  background-color: blueviolet;
+  transform: translate(5rem);
   transition: all 0.5s ease-in-out 0.01s;
 }
 .tertiary-button .__validation .fa-check-circle {
