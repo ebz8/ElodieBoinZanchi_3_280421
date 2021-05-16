@@ -507,7 +507,6 @@ boutons
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background-color: darkgray;
 }
 .tertiary-button .__text {
   overflow: hidden;
@@ -532,7 +531,6 @@ boutons
 .tertiary-button .__price {
   align-self: flex-end;
   padding: 0 1rem;
-  background-color: cyan;
 }
 .tertiary-button .__validation {
   width: 0rem;
