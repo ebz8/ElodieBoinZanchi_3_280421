@@ -1,4 +1,4 @@
-## Démo : https://ebz8.github.io/ElodieBoinZanchi_3_280421
+## Démo: https://ebz8.github.io/ElodieBoinZanchi_3_280421
 
 # Ohmyfood! - Brief
 ### Design:
