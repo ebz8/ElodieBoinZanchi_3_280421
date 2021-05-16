@@ -510,11 +510,11 @@ boutons
   white-space: nowrap;
 }
 .tertiary-button .__text p:first-child {
-  font: 1.1rem;
+  font-size: 1.1rem;
   padding-bottom: 0.5rem;
 }
 .tertiary-button .__text p:last-child {
-  font: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 200;
 }
 .tertiary-button .__price {
@@ -762,7 +762,7 @@ Menus
   border-radius: 2rem 2rem 0 0;
 }
 .menu .tertiary-button {
-  width: 95%;
+  width: 98%;
 }
 
 .menu__title {

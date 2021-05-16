@@ -105,12 +105,13 @@ boutons
     text-overflow: ellipsis;
     white-space: nowrap;
 
-    & p:first-child{
-      font: 1.1rem;
+    p:first-child{
+      font-size: 1.1rem;
       padding-bottom: 0.5rem;
     } 
-    & p:last-child{
-      font: 0.7rem;
+    
+    p:last-child{
+      font-size: 0.9rem;
       font-weight: 200;
     }  
   }
