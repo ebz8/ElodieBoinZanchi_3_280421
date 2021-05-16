@@ -98,6 +98,13 @@ boutons
   // apparition en fondu au chargement de la page
   animation: fade-in ease-in-out backwards .4s;
 
+  .__content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: darkgray;
+  }
+
   // textes
   // dépassements -> "..."
   .__text{
@@ -122,14 +129,29 @@ boutons
       text-overflow: ellipsis;
     }  
   }
-  
+
   .__price{
     align-self: flex-end;
-    margin: 0 0.5rem;
+    padding: 0 1rem;
+    background-color: cyan;
+  }
 
   // Animation checkbox
   // Fond du bouton : tertiary color
-    &::after{
+    .__validation{
+      width: 0rem;
+      margin-top: 0.5rem;
+      // transform: translate(200%);
+      text-align: center;
+    }
+
+    .fa-check-circle{
+      color: white;
+      font-size: 1.3rem;
+      transform: rotate(0.5turn);
+    }
+
+  &::after{
       z-index: 1;
       content: "";
       display: flex;
@@ -143,44 +165,29 @@ boutons
       height: 4.5rem;
       border-radius: 0 1rem 1rem 0;
       background-color: $tertiary-color;
-
       // apparition depuis la droite
       transform: translate(120%);
       transition: transform ease-in .4s;
-    } 
+     
   }
-    .__validation{
-      display: inline-block;
-      height: 100%;
-      width: 2.5rem;
-      transform: translate(200%);
-      
-      .fa-check-circle{
-        display: flex;
-        color: white;
-        font-size: 1.3rem;
-        transform: rotate(0.5turn);
-      }
-  }
-  
 // Déclenchements au survol
   &:hover{
-    .__price::after{
+
+    &::after{
+      content: "";
       transform: translate(0); 
     }
 
     .__validation{
-      display: flex;
+      width: 4rem;
       z-index: 2;
-      margin-top: 0.5rem;
       transform: translate(0);
       transition: all .5s ease-in;
 
-      .fa-check-circle{
+    }.fa-check-circle{
         transform: rotate(1turn);
         transition: all .5s ease-in-out .2s;
       }
-    }
   }
 }
 

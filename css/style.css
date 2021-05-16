@@ -503,6 +503,12 @@ boutons
   box-shadow: 2px 3px 9px 0px rgba(190, 190, 190, 0.801);
   animation: fade-in ease-in-out backwards 0.4s;
 }
+.tertiary-button .__content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: darkgray;
+}
 .tertiary-button .__text {
   overflow: hidden;
   white-space: nowrap;
@@ -525,9 +531,20 @@ boutons
 }
 .tertiary-button .__price {
   align-self: flex-end;
-  margin: 0 0.5rem;
+  padding: 0 1rem;
+  background-color: cyan;
 }
-.tertiary-button .__price::after {
+.tertiary-button .__validation {
+  width: 0rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.tertiary-button .fa-check-circle {
+  color: white;
+  font-size: 1.3rem;
+  transform: rotate(0.5turn);
+}
+.tertiary-button::after {
   z-index: 1;
   content: "";
   display: flex;
@@ -544,29 +561,17 @@ boutons
   transform: translate(120%);
   transition: transform ease-in 0.4s;
 }
-.tertiary-button .__validation {
-  display: inline-block;
-  height: 100%;
-  width: 2.5rem;
-  transform: translate(200%);
-}
-.tertiary-button .__validation .fa-check-circle {
-  display: flex;
-  color: white;
-  font-size: 1.3rem;
-  transform: rotate(0.5turn);
-}
-.tertiary-button:hover .__price::after {
+.tertiary-button:hover::after {
+  content: "";
   transform: translate(0);
 }
 .tertiary-button:hover .__validation {
-  display: flex;
+  width: 4rem;
   z-index: 2;
-  margin-top: 0.5rem;
   transform: translate(0);
   transition: all 0.5s ease-in;
 }
-.tertiary-button:hover .__validation .fa-check-circle {
+.tertiary-button:hover .fa-check-circle {
   transform: rotate(1turn);
   transition: all 0.5s ease-in-out 0.2s;
 }
