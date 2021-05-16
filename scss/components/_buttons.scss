@@ -159,7 +159,6 @@ boutons
         color: white;
         font-size: 1.3rem;
         margin-top: 0.4rem;
-        transition: all .5s ease-in .2s;
       }
   }
   
@@ -177,7 +176,9 @@ boutons
       transition: all .5s ease-in-out .1s;
 
       .fa-check-circle{
-      transform: rotate(-1turn);
+      transform: rotate(0.5turn);
+      transition: all .5s ease-in .3s;
+
       }
     }
 
@@ -254,6 +255,3 @@ boutons
     }
   } 
 }
-
-
-// test

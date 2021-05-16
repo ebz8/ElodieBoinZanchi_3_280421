@@ -556,7 +556,6 @@ boutons
   color: white;
   font-size: 1.3rem;
   margin-top: 0.4rem;
-  transition: all 0.5s ease-in 0.2s;
 }
 .tertiary-button:hover .__price::after {
   transform: translate(0);
@@ -569,7 +568,8 @@ boutons
   transition: all 0.5s ease-in-out 0.1s;
 }
 .tertiary-button:hover .__validation .fa-check-circle {
-  transform: rotate(-1turn);
+  transform: rotate(0.5turn);
+  transition: all 0.5s ease-in 0.3s;
 }
 
 .tertiary-button:nth-child(1) {
