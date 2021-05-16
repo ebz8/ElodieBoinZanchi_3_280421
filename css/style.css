@@ -525,6 +525,7 @@ boutons
 }
 .tertiary-button .__price {
   align-self: flex-end;
+  margin: 0 0.5rem;
 }
 .tertiary-button .__price::after {
   z-index: 1;
@@ -544,17 +545,15 @@ boutons
   transition: transform ease-in 0.4s;
 }
 .tertiary-button .__validation {
-  display: none;
-  justify-content: center;
+  display: inline-block;
   height: 100%;
-  background-color: blueviolet;
-  transform: translate(5rem);
-  transition: all 0.5s ease-in-out 0.01s;
+  width: 2.5rem;
+  transform: translate(200%);
 }
 .tertiary-button .__validation .fa-check-circle {
+  display: flex;
   color: white;
   font-size: 1.3rem;
-  margin-top: 0.4rem;
   transform: rotate(0.5turn);
 }
 .tertiary-button:hover .__price::after {
@@ -563,9 +562,9 @@ boutons
 .tertiary-button:hover .__validation {
   display: flex;
   z-index: 2;
-  margin-right: 0;
+  margin-top: 0.5rem;
   transform: translate(0);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in;
 }
 .tertiary-button:hover .__validation .fa-check-circle {
   transform: rotate(1turn);

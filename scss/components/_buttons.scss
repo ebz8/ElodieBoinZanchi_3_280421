@@ -125,6 +125,7 @@ boutons
   
   .__price{
     align-self: flex-end;
+    margin: 0 0.5rem;
 
   // Animation checkbox
   // Fond du bouton : tertiary color
@@ -149,18 +150,15 @@ boutons
     } 
   }
     .__validation{
-      display: none;
-      justify-content: center;
+      display: inline-block;
       height: 100%;
-      background-color: blueviolet;
-      // margin: 0.4rem -10vw 0 1.5rem;
-      transform: translate(5rem);
-      transition: all .5s ease-in-out .01s;
-    
+      width: 2.5rem;
+      transform: translate(200%);
+      
       .fa-check-circle{
+        display: flex;
         color: white;
         font-size: 1.3rem;
-        margin-top: 0.4rem;
         transform: rotate(0.5turn);
       }
   }
@@ -174,20 +172,16 @@ boutons
     .__validation{
       display: flex;
       z-index: 2;
-      margin-right: 0;
+      margin-top: 0.5rem;
       transform: translate(0);
-      transition: all .5s ease-in-out;
+      transition: all .5s ease-in;
 
       .fa-check-circle{
-      transform: rotate(1turn);
-      transition: all .5s ease-in-out .2s;
-
-
+        transform: rotate(1turn);
+        transition: all .5s ease-in-out .2s;
       }
     }
-
   }
-
 }
 
 // apparition progressive des boutons
