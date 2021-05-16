@@ -511,6 +511,7 @@ boutons
 }
 .tertiary-button .__text p:first-child {
   font: 1.1rem;
+  padding-bottom: 0.5rem;
 }
 .tertiary-button .__text p:last-child {
   font: 0.7rem;
@@ -518,7 +519,6 @@ boutons
 }
 .tertiary-button .__price {
   align-self: flex-end;
-  padding-right: 2rem;
 }
 .tertiary-button .__price::after {
   z-index: 1;
@@ -530,8 +530,8 @@ boutons
   top: 0;
   bottom: 0;
   right: 0;
-  width: 4rem;
-  height: 4rem;
+  width: 4.2rem;
+  height: 4.5rem;
   border-radius: 0 1rem 1rem 0;
   background-color: #98e2cf;
   transform: translate(100%);
@@ -540,15 +540,17 @@ boutons
 .tertiary-button .__validation {
   display: flex;
   justify-content: center;
-  width: 3rem;
+  width: 4.2rem;
   height: 100%;
-  margin: 0.5rem -25% 0 0;
+  margin: 0.4rem -40% 0 1.5rem;
   transform: translate(2rem);
-  transition: transform 0.5s ease-in-out 0.1s;
+  transition: transform 0.5s ease-in-out 0.01s;
 }
 .tertiary-button .__validation .fa-check-circle {
   color: white;
-  transition: all 0.5s ease-in-out 0.3s;
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+  transition: all 0.5s ease-in 0.1s;
 }
 .tertiary-button:hover .__price::after {
   transform: translate(0);

@@ -107,6 +107,7 @@ boutons
 
     & p:first-child{
       font: 1.1rem;
+      padding-bottom: 0.5rem;
     } 
     & p:last-child{
       font: 0.7rem;
@@ -116,7 +117,6 @@ boutons
   
   .__price{
     align-self: flex-end;
-    padding-right: 2rem;
 
   // Animation checkbox
     &::after{
@@ -129,8 +129,8 @@ boutons
       top: 0;
       bottom: 0;
       right: 0;
-      width: 4rem;
-      height: 4rem;
+      width: 4.2rem;
+      height: 4.5rem;
       border-radius: 0 1rem 1rem 0;
       background-color: $tertiary-color;
       // apparition depuis la droite
@@ -141,15 +141,17 @@ boutons
     .__validation{
       display: flex;
       justify-content: center;
-      width: 3rem;
+      width: 4.2rem;
       height: 100%;
-      margin: 0.5rem -25% 0 0;
+      margin: 0.4rem -40% 0 1.5rem;
       transform: translate(2rem);
-      transition: transform .5s ease-in-out .1s;
+      transition: transform .5s ease-in-out .01s;
     
       .fa-check-circle{
         color: white;
-        transition: all .5s ease-in-out .3s;
+        font-size: 1.4rem;
+        margin-top: 0.4rem;
+        transition: all .5s ease-in .1s;
       }
   }
   
