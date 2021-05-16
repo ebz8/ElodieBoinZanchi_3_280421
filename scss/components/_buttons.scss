@@ -97,44 +97,8 @@ boutons
   // animation au chargement de la page
   animation: fade-in ease-in-out backwards .4s;
 
-  // Animation checkbox
-  
-    &::after{
-      z-index: 1;
-      content: "";
-      display: inline-block;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      width: 15%;
-      border-radius: 0 1rem 1rem 0;
-      background-color: $tertiary-color;
-      // apparition depuis la droite
-      transform: translate(100%);
-      transition: transform ease-in-out .25s;
-    }
-
-    .fa-check-circle{
-      display: flex;
-      color: white;
-      transform: translate(200%);
-      transition: transform .35s ease-in-out;
-      }
-
-    &:hover{
-      &::after{
-        transform: translate(0);
-      }
-      .fa-check-circle{
-        transform: translate(0);
-        z-index: 2;
-      }
-  }
-
-  // textes en dépassement > "..."
+  // textes
+  // dépassement -> "..."
   .__text{
     width: 80%;
     overflow: hidden;
@@ -149,10 +113,63 @@ boutons
       font-weight: 200;
     }  
   }
-
+  
   .__price{
     align-self: flex-end;
+    padding-right: 1rem;
+
+  // Animation checkbox
+    &::after{
+      z-index: 1;
+      content: "";
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 4rem;
+      border-radius: 0 1rem 1rem 0;
+      background-color: $tertiary-color;
+      // apparition depuis la droite
+      transform: translate(100%);
+      transition: transform ease-in-out .5s;
+    } 
   }
+
+    .__validation{
+      display: flex;
+      justify-content: center;
+      width: 3rem;
+      margin: 0.5rem -25% 0 0;
+
+      .fa-check-circle{
+        color: white;
+        transform: translate(2rem);
+        transition: transform ease-in-out .25s;
+      }
+  }
+  
+// Déclenchements au survol
+  &:hover{
+    .__price::after{
+      transform: translate(0); 
+    }
+    .__validation{
+      z-index: 2;
+      margin-right: 0rem;
+      transition: all ease-in-out .5s;
+      // transform: rotate(380deg); 
+
+      .fa-check-circle{
+        transform: translate(0);
+
+      } 
+
+    }
+  }
+
 }
 
 // apparition progressive

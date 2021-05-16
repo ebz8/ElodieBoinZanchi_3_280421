@@ -503,35 +503,6 @@ boutons
   box-shadow: 2px 3px 9px 0px rgba(190, 190, 190, 0.801);
   animation: fade-in ease-in-out backwards 0.4s;
 }
-.tertiary-button::after {
-  z-index: 1;
-  content: "";
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 15%;
-  border-radius: 0 1rem 1rem 0;
-  background-color: #98e2cf;
-  transform: translate(100%);
-  transition: transform ease-in-out 0.25s;
-}
-.tertiary-button .fa-check-circle {
-  display: flex;
-  color: white;
-  transform: translate(200%);
-  transition: transform 0.35s ease-in-out;
-}
-.tertiary-button:hover::after {
-  transform: translate(0);
-}
-.tertiary-button:hover .fa-check-circle {
-  transform: translate(0);
-  z-index: 2;
-}
 .tertiary-button .__text {
   width: 80%;
   overflow: hidden;
@@ -547,6 +518,45 @@ boutons
 }
 .tertiary-button .__price {
   align-self: flex-end;
+  padding-right: 1rem;
+}
+.tertiary-button .__price::after {
+  z-index: 1;
+  content: "";
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 4rem;
+  border-radius: 0 1rem 1rem 0;
+  background-color: #98e2cf;
+  transform: translate(100%);
+  transition: transform ease-in-out 0.5s;
+}
+.tertiary-button .__validation {
+  display: flex;
+  justify-content: center;
+  width: 3rem;
+  margin: 0.5rem -25% 0 0;
+}
+.tertiary-button .__validation .fa-check-circle {
+  color: white;
+  transform: translate(2rem);
+  transition: transform ease-in-out 0.25s;
+}
+.tertiary-button:hover .__price::after {
+  transform: translate(0);
+}
+.tertiary-button:hover .__validation {
+  z-index: 2;
+  margin-right: 0rem;
+  transition: all ease-in-out 0.5s;
+}
+.tertiary-button:hover .__validation .fa-check-circle {
+  transform: translate(0);
 }
 
 .tertiary-button:nth-child(1) {
