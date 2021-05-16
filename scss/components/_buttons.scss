@@ -146,20 +146,19 @@ boutons
     } 
   }
     .__validation{
-      display: none;
+      display: flex;
       justify-content: center;
       width: 4.2rem;
       height: 100%;
-      margin-top: 0.4rem;
-      margin-left: 1rem;
+      margin: 0.4rem -10vw 0 1.5rem;
       transform: translate(2rem);
-      transition: transform .5s ease-in-out .01s;
+      transition: all .5s ease-in-out .01s;
     
       .fa-check-circle{
         color: white;
         font-size: 1.3rem;
         margin-top: 0.4rem;
-        transition: all .5s ease-in .1s;
+        transition: all .5s ease-in .2s;
       }
   }
   
@@ -172,6 +171,7 @@ boutons
     .__validation{
       display: flex;
       z-index: 2;
+      margin-right: 0;
       transform: translate(0);
       transition: all .5s ease-in-out .1s;
 
