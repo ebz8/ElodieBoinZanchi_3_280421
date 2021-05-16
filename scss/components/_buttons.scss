@@ -98,21 +98,27 @@ boutons
   animation: fade-in ease-in-out backwards .4s;
 
   // textes
-  // dépassement -> "..."
+  // dépassements -> "..."
   .__text{
-    width: 80%;
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 1rem;
 
     p:first-child{
       font-size: 1.1rem;
       padding-bottom: 0.5rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     } 
     
     p:last-child{
       font-size: 0.9rem;
       font-weight: 200;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }  
   }
   
@@ -135,22 +141,23 @@ boutons
       border-radius: 0 1rem 1rem 0;
       background-color: $tertiary-color;
       // apparition depuis la droite
-      transform: translate(100%);
-      transition: transform ease-in-out .5s;
+      transform: translate(120%);
+      transition: transform ease-in .4s;
     } 
   }
     .__validation{
-      display: flex;
+      display: none;
       justify-content: center;
       width: 4.2rem;
       height: 100%;
-      margin: 0.4rem -40% 0 1.5rem;
+      margin-top: 0.4rem;
+      margin-left: 1rem;
       transform: translate(2rem);
       transition: transform .5s ease-in-out .01s;
     
       .fa-check-circle{
         color: white;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         margin-top: 0.4rem;
         transition: all .5s ease-in .1s;
       }
@@ -163,8 +170,8 @@ boutons
     }
 
     .__validation{
+      display: flex;
       z-index: 2;
-      margin-right: 0rem;
       transform: translate(0);
       transition: all .5s ease-in-out .1s;
 

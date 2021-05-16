@@ -504,18 +504,24 @@ boutons
   animation: fade-in ease-in-out backwards 0.4s;
 }
 .tertiary-button .__text {
-  width: 80%;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 1rem;
 }
 .tertiary-button .__text p:first-child {
   font-size: 1.1rem;
   padding-bottom: 0.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .tertiary-button .__text p:last-child {
   font-size: 0.9rem;
   font-weight: 200;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .tertiary-button .__price {
   align-self: flex-end;
@@ -534,21 +540,22 @@ boutons
   height: 4.5rem;
   border-radius: 0 1rem 1rem 0;
   background-color: #98e2cf;
-  transform: translate(100%);
-  transition: transform ease-in-out 0.5s;
+  transform: translate(120%);
+  transition: transform ease-in 0.4s;
 }
 .tertiary-button .__validation {
-  display: flex;
+  display: none;
   justify-content: center;
   width: 4.2rem;
   height: 100%;
-  margin: 0.4rem -40% 0 1.5rem;
+  margin-top: 0.4rem;
+  margin-left: 1rem;
   transform: translate(2rem);
   transition: transform 0.5s ease-in-out 0.01s;
 }
 .tertiary-button .__validation .fa-check-circle {
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-top: 0.4rem;
   transition: all 0.5s ease-in 0.1s;
 }
@@ -556,8 +563,8 @@ boutons
   transform: translate(0);
 }
 .tertiary-button:hover .__validation {
+  display: flex;
   z-index: 2;
-  margin-right: 0rem;
   transform: translate(0);
   transition: all 0.5s ease-in-out 0.1s;
 }
