@@ -26,6 +26,10 @@ Menus
 
   .tertiary-button{
     width: 98%;
+
+    @include tablet{
+      width: 95%;
+    }
   }
 }
 

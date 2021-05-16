@@ -771,6 +771,11 @@ Menus
 .menu .tertiary-button {
   width: 98%;
 }
+@media screen and (min-width: 718px) {
+  .menu .tertiary-button {
+    width: 95%;
+  }
+}
 
 .menu__title {
   display: flex;
