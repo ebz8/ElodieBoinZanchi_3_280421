@@ -193,7 +193,7 @@ boutons
 @for $i from 1 to 9{
   .tertiary-button{
     &:nth-child(#{$i}){
-      animation-delay: $i * (.3s);
+      animation-delay: $i * (.5s);
     }
   }
 }

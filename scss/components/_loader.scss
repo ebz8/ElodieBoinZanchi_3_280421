@@ -3,3 +3,58 @@
 loader
 ----------------------
 */
+
+// polygon{
+//     width: 100px;
+//     height: 100px;
+//     fill: $tertiary-color;
+// }
+
+.loading{
+    content: "";
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    filter: blur(4px), opacity(0.1);
+}
+
+.loader, .loader:before, .loader:after {
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	// animation-iteration-count: infinite;
+}
+
+.loader{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+	width: 2em;
+	height: 2em;
+    animation-name: loader-spinner;
+}
+
+.loader:before, .loader:after {
+	background: $tertiary-color;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	transform-origin: 50% 100%;	
+	clip-path: polygon(0 0,100% 0,50% 100%);
+	-webkit-clip-path: polygon(0 0,100% 0,50% 100%);
+}
+
+.loader:after {
+	transform: rotate(180deg);
+}
+@keyframes loader-spinner {
+	from { transform: scale(1,1) rotate(0turn) }
+	25%, 35%, 50% { transform: scale(1,1) rotate(0.75turn) }
+	30% { transform: scale(1.25,1) rotate(0.75turn) }
+	75%, 85%, to { transform: scale(1,1) rotate(1.5turn) }
+	80% { transform: scale(1,1.25) rotate(1.5turn) }
+}

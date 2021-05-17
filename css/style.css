@@ -575,35 +575,35 @@ boutons
 }
 
 .tertiary-button:nth-child(1) {
-  animation-delay: 0.3s;
+  animation-delay: 0.5s;
 }
 
 .tertiary-button:nth-child(2) {
-  animation-delay: 0.6s;
+  animation-delay: 1s;
 }
 
 .tertiary-button:nth-child(3) {
-  animation-delay: 0.9s;
-}
-
-.tertiary-button:nth-child(4) {
-  animation-delay: 1.2s;
-}
-
-.tertiary-button:nth-child(5) {
   animation-delay: 1.5s;
 }
 
+.tertiary-button:nth-child(4) {
+  animation-delay: 2s;
+}
+
+.tertiary-button:nth-child(5) {
+  animation-delay: 2.5s;
+}
+
 .tertiary-button:nth-child(6) {
-  animation-delay: 1.8s;
+  animation-delay: 3s;
 }
 
 .tertiary-button:nth-child(7) {
-  animation-delay: 2.1s;
+  animation-delay: 3.5s;
 }
 
 .tertiary-button:nth-child(8) {
-  animation-delay: 2.4s;
+  animation-delay: 4s;
 }
 
 .step {
@@ -649,6 +649,69 @@ boutons
   animation: fade-in ease-out backwards 0.6s;
 }
 
+/**
+----------------------
+loader
+----------------------
+*/
+.loading {
+  content: "";
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  filter: blur(4px), opacity(0.1);
+}
+
+.loader, .loader:before, .loader:after {
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 2em;
+  height: 2em;
+  animation-name: loader-spinner;
+}
+
+.loader:before, .loader:after {
+  background: #98e2cf;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  transform-origin: 50% 100%;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.loader:after {
+  transform: rotate(180deg);
+}
+
+@keyframes loader-spinner {
+  from {
+    transform: scale(1, 1) rotate(0turn);
+  }
+  25%, 35%, 50% {
+    transform: scale(1, 1) rotate(0.75turn);
+  }
+  30% {
+    transform: scale(1.25, 1) rotate(0.75turn);
+  }
+  75%, 85%, to {
+    transform: scale(1, 1) rotate(1.5turn);
+  }
+  80% {
+    transform: scale(1, 1.25) rotate(1.5turn);
+  }
+}
 /**
 ----------------------
 accueil
