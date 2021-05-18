@@ -283,9 +283,9 @@ bases
 ----------------------
 */
 body {
+  width: 100vw;
   max-width: 1440px;
   margin: 0 auto;
-  width: 100vw;
   font-family: "Roboto";
   font-size: 1rem;
 }
@@ -490,14 +490,14 @@ boutons
 }
 
 .tertiary-button {
-  display: flex;
+  cursor: pointer;
   position: relative;
+  display: flex;
   justify-content: space-between;
   overflow: hidden;
   width: 100%;
   padding: 0.8rem;
   margin: 0.5rem auto;
-  text-align: left;
   background-color: white;
   border: none;
   border-radius: 1rem;
@@ -534,7 +534,7 @@ boutons
   padding: 0 1rem;
 }
 .tertiary-button .__validation {
-  width: 0rem;
+  width: 0;
   margin-top: 0.5rem;
   text-align: center;
 }
@@ -552,7 +552,7 @@ boutons
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
+  right: -0.01rem;
   width: 4.2rem;
   height: 4.5rem;
   border-radius: 0 1rem 1rem 0;
@@ -560,13 +560,9 @@ boutons
   transform: translate(120%);
   transition: transform ease-in 0.4s;
 }
-.tertiary-button:hover::after {
-  content: "";
-  transform: translate(0);
-}
 .tertiary-button:hover .__validation {
-  width: 4rem;
   z-index: 2;
+  width: 4rem;
   transform: translate(0);
   transition: all 0.5s ease-in;
 }
@@ -574,36 +570,40 @@ boutons
   transform: rotate(1turn);
   transition: all 0.5s ease-in-out 0.2s;
 }
+.tertiary-button:hover::after {
+  content: "";
+  transform: translate(0);
+}
 
-.tertiary-button:nth-child(1) {
+.tertiary-button:nth-of-type(1) {
   animation-delay: 0.5s;
 }
 
-.tertiary-button:nth-child(2) {
+.tertiary-button:nth-of-type(2) {
   animation-delay: 1s;
 }
 
-.tertiary-button:nth-child(3) {
+.tertiary-button:nth-of-type(3) {
   animation-delay: 1.5s;
 }
 
-.tertiary-button:nth-child(4) {
+.tertiary-button:nth-of-type(4) {
   animation-delay: 2s;
 }
 
-.tertiary-button:nth-child(5) {
+.tertiary-button:nth-of-type(5) {
   animation-delay: 2.5s;
 }
 
-.tertiary-button:nth-child(6) {
+.tertiary-button:nth-of-type(6) {
   animation-delay: 3s;
 }
 
-.tertiary-button:nth-child(7) {
+.tertiary-button:nth-of-type(7) {
   animation-delay: 3.5s;
 }
 
-.tertiary-button:nth-child(8) {
+.tertiary-button:nth-of-type(8) {
   animation-delay: 4s;
 }
 
