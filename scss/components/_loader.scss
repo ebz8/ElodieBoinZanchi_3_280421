@@ -5,13 +5,14 @@ loader
 */
 
 .loader{
+    z-index: 10;  
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    animation: loader-disparition 2s forwards 1s;
+    // animation: loader-disparition 2s forwards 1s;
 
     &::before{
     content: "";
@@ -29,10 +30,11 @@ loader
     }
 
     svg{
-        z-index: 15;
+  
+      z-index: 15;
         opacity: 1;
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         fill: $tertiary-color;
         transform-origin: 25px 25px;
         animation: loader-spinner 2.3s linear infinite;

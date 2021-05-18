@@ -254,7 +254,7 @@ boutons
       -webkit-text-fill-color: transparent;
       text-rendering: geometricPrecision;
       overflow: hidden;
-      animation: fade-in ease-out backwards 0.6s;
+      animation: fade-in ease-in-out backwards 0.6s;
     }
   } 
 }

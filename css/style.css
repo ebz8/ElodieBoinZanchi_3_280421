@@ -647,7 +647,7 @@ boutons
   -webkit-text-fill-color: transparent;
   text-rendering: geometricPrecision;
   overflow: hidden;
-  animation: fade-in ease-out backwards 0.6s;
+  animation: fade-in ease-in-out backwards 0.6s;
 }
 
 /**
@@ -656,13 +656,13 @@ loader
 ----------------------
 */
 .loader {
+  z-index: 10;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  animation: loader-disparition 2s forwards 1s;
 }
 .loader::before {
   content: "";
@@ -679,8 +679,8 @@ loader
 .loader svg {
   z-index: 15;
   opacity: 1;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   fill: #98e2cf;
   transform-origin: 25px 25px;
   animation: loader-spinner 2.3s linear infinite;
