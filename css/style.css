@@ -352,6 +352,7 @@ ul {
   text-transform: uppercase;
   font-weight: 200;
   font-size: 1rem;
+  padding-bottom: 0.4rem;
 }
 .section-name::after {
   content: "";
@@ -663,7 +664,7 @@ loader
 }
 .loader::before {
   content: "";
-  z-index: 5;
+  z-index: 10;
   position: absolute;
   left: 0;
   right: 0;
@@ -674,7 +675,7 @@ loader
   opacity: 0.9;
 }
 .loader svg {
-  z-index: 6;
+  z-index: 20;
   opacity: 1;
   width: 100px;
   height: 100px;
