@@ -662,7 +662,7 @@ loader
   align-items: center;
   width: 100%;
   height: 100%;
-  animation: loader-disparition 3s forwards;
+  animation: loader-disparition 2s forwards 1s;
 }
 .loader::before {
   content: "";
@@ -674,21 +674,20 @@ loader
   width: 100vw;
   height: 100vh;
   background-color: white;
-  opacity: 0.9;
-  position: fixed;
+  opacity: 0.8;
 }
 .loader svg {
-  z-index: 20;
+  z-index: 15;
   opacity: 1;
   width: 100px;
   height: 100px;
   fill: #98e2cf;
-  animation: loader-spinner 2.3s linear infinite;
   transform-origin: 25px 25px;
+  animation: loader-spinner 2.3s linear infinite;
 }
 
 @keyframes loader-disparition {
-  80% {
+  90% {
     opacity: 0.9;
   }
   to {
