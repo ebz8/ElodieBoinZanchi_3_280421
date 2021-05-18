@@ -12,7 +12,7 @@ loader
     align-items: center;
     width: 100%;
     height: 100%;
-    // animation: loader-disparition 2s forwards 1s;
+    animation: loader-disparition 2s forwards 1s;
 
     &::before{
     content: "";
@@ -23,22 +23,19 @@ loader
     bottom: 0;
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background: white;
+    background-size: cover;
     opacity: 0.8;
-    // position: fixed;
-    // filter: blur(2px);
     }
 
     svg{
-  
       z-index: 15;
-        opacity: 1;
-        width: 50px;
-        height: 50px;
-        fill: $tertiary-color;
-        transform-origin: 25px 25px;
-        animation: loader-spinner 2.3s linear infinite;
-        // filter: contrast(100%) blur(1px);
+      opacity: 1;
+      width: 50px;
+      height: 50px;
+      fill: $tertiary-color;
+      transform-origin: 25px 25px;
+      animation: loader-spinner 2.3s linear infinite;
     }
 }
 
