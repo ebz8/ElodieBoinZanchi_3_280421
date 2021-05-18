@@ -682,7 +682,7 @@ loader
   height: 100px;
   fill: #98e2cf;
   animation: loader-spinner 2.3s linear infinite;
-  transform-origin: 50px 50px;
+  transform-origin: 25px 25px;
 }
 
 @keyframes loader-disparition {
