@@ -10,7 +10,9 @@ loader
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: loader-duration 3s forwards;
+    width: 100%;
+    height: 100%;
+    // animation: loader-disparition 3s forwards;
 
     &::before{
     content: "";
@@ -21,7 +23,7 @@ loader
     bottom: 0;
     width: 100vw;
     height: 100vh;
-    background-color: $tertiary-color;
+    background-color: white;
     opacity: 0.9;
     // position: fixed;
     // filter: blur(2px);
@@ -32,16 +34,13 @@ loader
         opacity: 1;
         width: 100px;
         height: 100px;
-        fill: white;
-        animation: loader-spinner 2.3s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
+        fill: $tertiary-color;
+        animation: loader-spinner 2.3s linear infinite;
         transform-origin: 50px 50px;
-        // filter: drop-shadow(0 10px $primary-color);
     }
 }
 
-@keyframes loader-duration{
+@keyframes loader-disparition{
   80%{
     opacity: 1;
   }
