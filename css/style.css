@@ -538,6 +538,7 @@ boutons
   border-radius: 0 1rem 1rem 0;
   background-color: #98e2cf;
   margin: -1rem -6rem -1rem 0;
+  transition: all 0.5s ease-in;
 }
 .tertiary-button .__icone {
   text-align: center;
@@ -545,14 +546,13 @@ boutons
   color: white;
   font-size: 1.3rem;
   transform: rotate(0.5turn);
+  transition: all 0.5s ease-in-out 0.2s;
 }
 .tertiary-button:hover .__validation {
   margin: -1rem -1rem -1rem 0;
-  transition: all 0.5s ease-in;
 }
 .tertiary-button:hover .__icone {
   transform: rotate(1turn);
-  transition: all 0.5s ease-in-out 0.2s;
 }
 
 .tertiary-button:nth-of-type(1) {
