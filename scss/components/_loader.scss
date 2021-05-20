@@ -7,16 +7,18 @@ loader
 .loader{
     z-index: 10;  
     position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    animation: loader-disparition 2.5s forwards 1s;
-
+    animation: fade-out 2.5s forwards 1s;
+    
+// fond semi-transparent:
     &::before{
     content: "";
     z-index: 10;
+    opacity: 0.8;
     position: absolute;
     left: 0;
     right: 0;
@@ -24,34 +26,21 @@ loader
     width: 100vw;
     height: 100vh;
     background: white;
-    background-size: cover;
-    opacity: 0.8;
     }
 
+// dessin:
     svg{
       z-index: 15;
       opacity: 1;
       width: 50px;
       height: 50px;
       fill: $tertiary-color;
-      transform-origin: 25px 25px;
       animation: loader-spinner 2.3s linear infinite;
+      transform-origin: 25px 25px;
     }
 }
 
-@keyframes loader-disparition{
-  80%{
-    opacity: 0.7;
-  }
-  99%{
-    opacity: 0;
-  }
-  100%{
-    z-index: -1;
-    opacity: 0;
-  }
-}
-
+// animation:
 @keyframes loader-spinner {
   from {
     transform: scale(1,1) rotate(0turn)

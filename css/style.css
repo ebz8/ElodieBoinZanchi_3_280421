@@ -277,6 +277,16 @@ summary {
 fonts
 -----------------------
 */
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+input::-moz-placeholder {
+  opacity: 1;
+  -webkit-appearance: none;
+}
+
 /**
 ----------------------
 bases
@@ -300,11 +310,6 @@ section {
   justify-content: center;
 }
 
-h1, h2, h3, h4, h5, p {
-  margin: 0;
-  padding: 0;
-}
-
 p {
   font-family: "Roboto";
   font-weight: 500;
@@ -316,14 +321,14 @@ h1, .restaurant-name {
 
 h2 {
   font-size: 1.5rem;
-  line-height: 1.7rem;
   font-weight: 500;
+  line-height: 1.7rem;
 }
 
 h3 {
   font-size: 1.13rem;
-  line-height: 1.4rem;
   font-weight: 200;
+  line-height: 1.4rem;
   color: #4d4d4d;
 }
 
@@ -338,21 +343,21 @@ h5 {
 
 a {
   color: black;
-  text-decoration: none;
   font-weight: 200;
+  text-decoration: none;
 }
 
 ul {
-  list-style-type: none;
   padding: 0;
   margin: 0.3rem 0;
+  list-style-type: none;
 }
 
 .section-name {
-  text-transform: uppercase;
-  font-weight: 200;
-  font-size: 1rem;
   padding-bottom: 0.4rem;
+  font-size: 1rem;
+  font-weight: 200;
+  text-transform: uppercase;
 }
 .section-name::after {
   content: "";
@@ -360,11 +365,6 @@ ul {
   width: 2.5rem;
   padding-bottom: 0.2rem;
   border-bottom: 0.2rem #98e2cf solid;
-}
-
-input::-moz-placeholder {
-  opacity: 1;
-  -webkit-appearance: none;
 }
 
 /**
@@ -398,20 +398,20 @@ style du footer
 -----------------------
 */
 footer {
-  margin-top: -2rem;
-  background-color: #333333;
   width: 100%;
+  margin-top: -2rem;
   padding: 1rem 1.5rem;
   color: white;
+  background-color: #333333;
 }
 footer ul {
   font-size: 0.9rem;
   line-height: 1.5rem;
 }
 footer ul .fas {
-  font-size: 0.8rem;
-  margin-right: 1rem;
   width: 0.2rem;
+  margin-right: 1rem;
+  font-size: 0.8rem;
 }
 footer ul a {
   color: white;
@@ -427,6 +427,18 @@ footer ul a {
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes fade-out {
+  80% {
+    opacity: 0.7;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    z-index: -1;
+    opacity: 0;
   }
 }
 /**
@@ -636,16 +648,17 @@ loader
 .loader {
   z-index: 10;
   position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  animation: loader-disparition 2.5s forwards 1s;
+  animation: fade-out 2.5s forwards 1s;
 }
 .loader::before {
   content: "";
   z-index: 10;
+  opacity: 0.8;
   position: absolute;
   left: 0;
   right: 0;
@@ -653,8 +666,6 @@ loader
   width: 100vw;
   height: 100vh;
   background: white;
-  background-size: cover;
-  opacity: 0.8;
 }
 .loader svg {
   z-index: 15;
@@ -662,22 +673,10 @@ loader
   width: 50px;
   height: 50px;
   fill: #98e2cf;
-  transform-origin: 25px 25px;
   animation: loader-spinner 2.3s linear infinite;
+  transform-origin: 25px 25px;
 }
 
-@keyframes loader-disparition {
-  80% {
-    opacity: 0.7;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    z-index: -1;
-    opacity: 0;
-  }
-}
 @keyframes loader-spinner {
   from {
     transform: scale(1, 1) rotate(0turn);

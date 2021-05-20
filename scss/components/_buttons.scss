@@ -8,10 +8,9 @@ boutons
 ///boutons principaux///
 ////////////////////////
 
-
+//
 // Bouton principal
-// (dégradé, coins arrondis)
-// ex: Explorer nos restaurants, Commander
+// ex: (Explorer nos restaurants, Commander)
 .main-button{
   cursor: pointer;
   z-index: 1;
@@ -24,7 +23,7 @@ boutons
   border-radius: $btn-radius;
   box-shadow: $btn-shadows;
 
-// animation au survol : éclaircissement bg-color / aug box-shadow
+// animation au survol (éclaircissement bg-color / aug box-shadow):
   &::after{
     content: "";
     z-index: -1;
@@ -47,9 +46,9 @@ boutons
   }
 }
 
-
+//
 // Bouton large, monochrome, contenant icône
-// ex : Choisissez un restaurant, Composez votre menu
+// (ex : Choisissez un restaurant, Composez votre menu)
 .secondary-button{
   width: 98%;
   max-width: 330px;
@@ -67,7 +66,7 @@ boutons
   }
 }
 
-// version active: icone et fond colorés
+// version active (icone et fond colorés):
 .secondary-button--active{
   @extend .secondary-button;
   background-color: lighten($primary-color, 37%);
@@ -79,8 +78,9 @@ boutons
   }
 }
 
+//
 // Bouton large, blanc, effet checked
-// ex: lignes de menus
+// (ex: lignes de menus)
 .tertiary-button{
   cursor: pointer;
   position: relative;
@@ -176,8 +176,9 @@ boutons
 //boutons secondaires///
 ////////////////////////
 
-
+//
 // Numérotation d'étapes
+//
 .step{
   position: relative;
   left: -2.2rem;
@@ -189,8 +190,9 @@ boutons
   border-radius: 50%;
 }
 
-
+//
 // Bouton "Nouveau"
+//
 .new-button{
   position: absolute;
   top: 0.8rem;
@@ -203,8 +205,9 @@ boutons
 }
 
 
+//
 // Bouton "j'aime"
-// (se remplit quand hover ou checked)
+//
 .like-button{
 // icône stade A:
   .fa-heart{

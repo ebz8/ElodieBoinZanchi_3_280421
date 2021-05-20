@@ -5,20 +5,20 @@ style du footer
 */
 
 footer{
-  margin-top: -2rem;
-  background-color: darken($bg-color,80%);
   width: 100%;
+  margin-top: -2rem;
   padding: 1rem 1.5rem;
   color: white;
+  background-color: darken($bg-color,80%);
 
   ul{
     font-size: 0.9rem;  
     line-height: 1.5rem;
 
     .fas{
-      font-size: 0.8rem;
-      margin-right: 1rem;
       width: 0.2rem;
+      margin-right: 1rem;
+      font-size: 0.8rem;
     }
 
     a{
