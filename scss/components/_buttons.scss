@@ -138,7 +138,7 @@ boutons
     .__validation{
       width: 0;
       margin-top: 0.5rem;
-      // transform: translate(200%);
+      transform: translate(200%);
       text-align: center;
     }
 
@@ -151,15 +151,11 @@ boutons
   &::after{
       z-index: 1;
       content: "";
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: -0.01rem;
+      
+    
       width: 4.2rem;
       height: 4.5rem;
+      margin: -20px 0 0 -20px;
       border-radius: 0 1rem 1rem 0;
       background-color: $tertiary-color;
       // apparition depuis la droite

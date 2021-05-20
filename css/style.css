@@ -536,6 +536,7 @@ boutons
 .tertiary-button .__validation {
   width: 0;
   margin-top: 0.5rem;
+  transform: translate(200%);
   text-align: center;
 }
 .tertiary-button .fa-check-circle {
@@ -546,15 +547,9 @@ boutons
 .tertiary-button::after {
   z-index: 1;
   content: "";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -0.01rem;
   width: 4.2rem;
   height: 4.5rem;
+  margin: -20px 0 0 -20px;
   border-radius: 0 1rem 1rem 0;
   background-color: #98e2cf;
   transform: translate(120%);
@@ -663,7 +658,7 @@ loader
   align-items: center;
   width: 100%;
   height: 100%;
-  animation: loader-disparition 2s forwards 1s;
+  animation: loader-disparition 2.5s forwards 1s;
 }
 .loader::before {
   content: "";
@@ -689,10 +684,14 @@ loader
 }
 
 @keyframes loader-disparition {
-  90% {
-    opacity: 0.9;
+  80% {
+    opacity: 0.7;
   }
-  to {
+  99% {
+    opacity: 0;
+  }
+  100% {
+    z-index: -1;
     opacity: 0;
   }
 }
