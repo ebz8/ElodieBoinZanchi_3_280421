@@ -528,7 +528,6 @@ boutons
 .tertiary-button .__price {
   align-self: flex-end;
   margin: 0 1.5rem;
-  background-color: lightgreen;
 }
 .tertiary-button .__validation {
   display: flex;
