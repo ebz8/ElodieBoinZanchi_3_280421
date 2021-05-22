@@ -441,6 +441,23 @@ footer ul a {
     opacity: 0;
   }
 }
+@keyframes loader-spinner {
+  from {
+    transform: scale(1, 1) rotate(0turn);
+  }
+  25%, 35%, 50% {
+    transform: scale(1, 1) rotate(0.75turn);
+  }
+  30% {
+    transform: scale(1.25, 1) rotate(0.75turn);
+  }
+  75%, 85%, to {
+    transform: scale(1, 1) rotate(1.5turn);
+  }
+  80% {
+    transform: scale(1, 1.25) rotate(1.5turn);
+  }
+}
 /**
 -----------------------
 boutons
@@ -677,23 +694,6 @@ loader
   transform-origin: 25px 25px;
 }
 
-@keyframes loader-spinner {
-  from {
-    transform: scale(1, 1) rotate(0turn);
-  }
-  25%, 35%, 50% {
-    transform: scale(1, 1) rotate(0.75turn);
-  }
-  30% {
-    transform: scale(1.25, 1) rotate(0.75turn);
-  }
-  75%, 85%, to {
-    transform: scale(1, 1) rotate(1.5turn);
-  }
-  80% {
-    transform: scale(1, 1.25) rotate(1.5turn);
-  }
-}
 /**
 ----------------------
 accueil
