@@ -835,6 +835,7 @@ Menus
 
 .menu__section {
   width: 100%;
+  padding-bottom: 1.5rem;
 }
 @media screen and (min-width: 1012px) {
   .menu__section {
@@ -852,6 +853,9 @@ Menus
   justify-content: center;
   width: 100%;
   margin-top: 2rem;
+}
+#menu__checkout .main-button {
+  padding: 0.9rem 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
