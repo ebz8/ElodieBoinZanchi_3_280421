@@ -433,6 +433,7 @@ footer ul a {
     opacity: 0;
   }
   100% {
+    opacity: 0;
     z-index: -1;
   }
 }
