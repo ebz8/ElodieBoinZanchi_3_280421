@@ -12,13 +12,13 @@ loader
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fade-out 2.5s forwards 1s;
+    animation: fade-out 2s forwards 2s;
     
 // fond semi-transparent:
     &::before{
     content: "";
     z-index: 10;
-    opacity: 0.8;
+    opacity: 0.9;
     position: absolute;
     left: 0;
     right: 0;

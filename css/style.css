@@ -293,7 +293,6 @@ bases
 ----------------------
 */
 body {
-  width: 100vw;
   max-width: 1440px;
   margin: 0 auto;
   font-family: "Roboto";
@@ -430,15 +429,12 @@ footer ul a {
   }
 }
 @keyframes fade-out {
-  80% {
-    opacity: 0.7;
-  }
-  99% {
-    opacity: 0;
+  70% {
+    opacity: 0.9;
   }
   100% {
-    z-index: -1;
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes loader-spinner {
@@ -670,12 +666,12 @@ loader
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fade-out 2.5s forwards 1s;
+  animation: fade-out 2s forwards 2s;
 }
 .loader::before {
   content: "";
   z-index: 10;
-  opacity: 0.8;
+  opacity: 0.9;
   position: absolute;
   left: 0;
   right: 0;
